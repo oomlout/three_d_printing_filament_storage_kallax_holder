@@ -1,85 +1,62 @@
 <!-- oobb-presentation:start -->
 # KALLAX filament holders
 
-Two independent holders per KALLAX cell: five front reels and five raised rear refills. Four side frames and two M6 rails per holder.
+AI-generated images and instructions. Errors possible.
 
-*AI-generated images and instructions. Errors possible.*
+## Summary
 
-![AI-generated CAD render: five front reels and five raised rear refills in one KALLAX cell](presentation/images/cell.png)
+Two holders store five front filament reels and five raised rear refills in one IKEA KALLAX cell.
 
-[Guide (PDF)](presentation/assembly-guide.pdf) · [BOM (CSV)](presentation/parts.csv) · [Build notes](presentation/README.md)
+![AI-generated CAD render: finished filament storage in a KALLAX cell](presentation/images/cell.png)
 
-## Configuration
+## Details
 
-Front: 4 short frames. Rear: 4 tall frames. Rail heights: 37 / 112 mm. Row centres: 187 mm. Nominal cell width: 335 mm.
+Each holder uses four side frames and two adjustable M6 rails. The short and tall holders are independent. Nominal width: 335 mm. Rail heights: 37 and 112 mm. Print all 32 plastic pieces in black.
 
-Illustrated rolls: front diameter 200 x 60 mm wide; rear diameter 200 x 58 mm wide. Five rolls at 62 mm centres occupy 308 mm.
+![AI-generated CAD render: assembled printed parts, with hardware, filament and cabinet omitted](presentation/images/printed.png)
 
-![AI-generated CAD render: two populated cells in a 4 by 4 KALLAX shelving unit](presentation/images/cabinet.png)
+[Print files](parts) · [Full BOM](presentation/parts.csv) · [Assembly guide](presentation/assembly-guide.pdf) · [Build notes](presentation/README.md)
 
 ## Parts
 
-Quantities are for one complete cell. Double for two cells. Print all 32 plastic parts in black.
+![AI-generated CAD render: exploded short holder with frames, sleeves and hardware](presentation/images/exploded.png)
 
-| Ref. | Type | Part | Specification | Qty. | MD5 alpha |
-| --- | --- | --- | --- | ---: | --- |
-| P1 | Print | [Short side frame](parts/project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_3_height_9_mm_depth_short_extra/3dpr.stl) | 149 x 44 x 9 mm | 4 | - |
-| P2 | Print | [Tall side frame](parts/project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_8_height_9_mm_depth_short_extra/3dpr.stl) | 149 x 119 x 9 mm | 4 | - |
-| P3 | Print | [Long sleeve](parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_99_67_mm_depth_one_end_nut_extra/3dpr.stl) | 99.67 mm long; one-end hex pocket | 8 | - |
-| P4 | Print | [Centre sleeve](parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_67_67_mm_depth_one_end_nut_extra/3dpr.stl) | 67.67 mm long; one-end hex pocket | 4 | - |
-| P5 | Print | [Coupling housing](parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_18_mm_depth_full_nut_extra/3dpr.stl) | 18 mm long; full hex bore | 4 | - |
-| P6 | Print | [Retaining nut cover](parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_7_mm_depth_full_nut_extra/3dpr.stl) | 7 mm long; full hex bore | 4 | - |
-| P7 | Print | [Slotted cover](parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_7_mm_depth_slotted_extra/3dpr.stl) | 7 mm long; open slot | 4 | - |
-| H1 | Hardware | [M6 threaded rod](https://www.ecfibreglasssupplies.co.uk/grade-48-zinc-threaded-rod-m6-x-300-mm) | 300 mm cut length; M6 x 1.0 | 4 | - |
-| H2 | Hardware | [M6 hex nut](https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/hardware_nut_m6) | 10 mm AF; 5 mm nominal thickness | 8 | [hcps](https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/hardware_nut_m6) |
-| H3 | Hardware | [M6 coupling nut](https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/hardware_nut_m6_coupling) | DIN 6334; 18 mm long; 10 mm AF | 4 | [1qsz8](https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/hardware_nut_m6_coupling) |
-| H4 | Hardware | [M6 x 25 hex-head bolt, fully threaded](https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_set_screw_m6_25_mm_length) | 25 mm under head; M6 x 1.0; DIN 933 | 4 | [9dg7e](https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_set_screw_m6_25_mm_length) |
+Short holder shown. The rear holder uses tall frames.
 
-Click an MD5 alpha code for its OOMP record. H2 includes fixed and retaining nuts. H4 is a fully threaded hex-head set screw.
+Hardware quantities for one complete cell. Double for two cells.
 
-## Preparation
+| Ref. | Part | Specification | Qty. | OOMP ID | Code |
+| --- | --- | --- | ---: | --- | --- |
+| H1 | M6 threaded rod | 300 mm cut length; M6 x 1.0 | 4 | Pending | — |
+| H2 | [M6 hex nut](https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_nut_m6) | 10 mm AF; 5 mm nominal thickness | 8 | [`hardware_nut_m6`](https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_nut_m6) | [hcps](https://oom.lt/a/hcps) |
+| H3 | [M6 coupling nut](https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_nut_m6_coupling) | DIN 6334; 18 mm long; 10 mm AF | 4 | [`hardware_nut_m6_coupling`](https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_nut_m6_coupling) | [1qsz8](https://oom.lt/a/1qsz8) |
+| H4 | [M6 x 25 hex-head bolt, fully threaded](https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_set_screw_m6_25_mm_length) | 25 mm under head; M6 x 1.0; DIN 933 | 4 | [`hardware_set_screw_m6_25_mm_length`](https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_set_screw_m6_25_mm_length) | [9dg7e](https://oom.lt/a/9dg7e) |
 
-Measure the opening. Check the 5 mm hex pockets against the nuts and bolt heads. Cut and deburr four 300 mm M6 rods. Prepare a 10 mm spanner.
+Threaded rod: OOMP record pending.
 
 ## Assembly
 
-![AI-generated CAD render: exploded short holder showing four side frames and two threaded rails](presentation/images/exploded.png)
+1. Cut and deburr four 300 mm M6 rods. Seat two M6 nuts in a short frame’s outer recesses. Thread in two rods with their ends flush.
 
-1. Seat two H2 nuts in the first frame's outer hex pockets. Thread in H1 rods; keep the ends flush.
+   [![AI-generated CAD render: fixed-end frame, recessed nuts and two rods](presentation/images/thumbnails/step-01.png)](presentation/images/step-fixed.png)
 
-2. Fit both rails in this order: P3 sleeve / second frame / P4 sleeve / third frame / P3 sleeve. Face the last sleeve's hex pocket toward the coupling.
+2. On both rods, fit a 99.67 mm sleeve, second frame, 67.67 mm sleeve, third frame and 99.67 mm sleeve. Face the last sleeve’s hex pocket toward the coupling.
 
-3. Insert H3 couplings into P5 housings. Thread onto the rods to approximately 6 mm engagement.
+   [![AI-generated CAD render: three frames and long sleeves on the two rods](presentation/images/thumbnails/step-02.png)](presentation/images/step-sleeves.png)
 
-4. Face the final frame's hex pockets outward. Insert H4 bolts. Add H2 retaining nuts loosely. Slide P6 hex covers onto the bolts.
+3. Insert each M6 coupling nut into an 18 mm housing. Thread it onto the rod by approximately 6 mm.
 
-5. Thread H4 into H3. Set the span. Seat the bolt heads. Slide P6 aside, tighten H2 against the inner frame face, then cover the nuts.
+   [![AI-generated CAD render: rod end, M6 coupling nut and printed housing](presentation/images/thumbnails/step-03.png)](presentation/images/step-coupling.png)
 
-6. Clip P7 over each exposed thread section. Check all end fasteners are recessed. Repeat with tall frames.
+4. Face the final frame’s hex recesses outward. Insert the M6 × 25 mm bolts. Add retaining nuts loosely, then slide on the 7 mm hex covers. Thread the bolts into the couplings.
 
-## Adjustment
+   [![AI-generated CAD render: coupling, covers, retaining nut, final frame and adjustment bolt](presentation/images/thumbnails/step-04.png)](presentation/images/adjust.png)
 
-![AI-generated engineering section: one coupling, 7 mm clip, retaining nut in a 7 mm hex cover and recessed bolt head](presentation/images/end-section.png)
+5. Set the span to the measured opening; nominally 335 mm. Seat the bolt heads in their recesses. Tighten the retaining nuts against the inner frame face, replace the hex covers and clip the 7 mm slotted covers over the exposed thread.
 
-Per rail: one 18 mm coupling, one M6 x 25 bolt, one retaining M6 nut, one 7 mm hex cover and one 7 mm slotted cover.
+   [![AI-generated section drawing: recessed bolt head, retaining nut and end covers](presentation/images/thumbnails/step-05.png)](presentation/images/end-section.png)
 
-To adjust: remove P7; slide P6 aside; loosen H2; release the bolt head from its recess; turn H4. Reseat the head, tighten H2 and refit both covers.
+6. Repeat with four tall frames. Place the tall holder at the rear and the short holder at the front. Load strapped rear refills, then front reels.
 
-## Installation
-
-1. Place the tall holder at the rear and the short holder at the front. Seat all feet on the shelf.
-
-2. Check width and fastener seating before loading. Do not force the cabinet sides apart.
-
-3. Load strapped rear refills, then front reels. Check clearance and frame stability.
-
-## Dimensions
-
-Nominal rail stack: `4 x 9 + 2 x 99.67 + 67.67 + 18 + 7 + 7 = 335.01 mm`.
-
-M6 x 25 bolt: 7 mm nominal coupling engagement; 5.01 mm tip clearance. Rod engagement: 5.99 mm. Slotted cover length for another opening: `opening - 328.01 mm`; recheck engagement before use.
-
-## Sources
-
-[STL files](scad_output) · [Catalogue parts](parts) · [Coupling dimensions](https://www.accu.co.uk/hexagonal-stud-connector-nuts/62290-HTBN-M6-A2) · [KALLAX reference](https://www.ikea.com/gb/en/p/kallax-shelving-unit-white-30275861/) · [Research notes](presentation/research.md)
+   [![AI-generated CAD render: both holders installed and loaded in a KALLAX cell](presentation/images/thumbnails/step-06.png)](presentation/images/cell.png)
 <!-- oobb-presentation:end -->

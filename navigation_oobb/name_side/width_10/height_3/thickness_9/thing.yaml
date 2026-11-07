@@ -37,7 +37,7 @@ kwargs:
 manufacturer: ''
 name: side
 part_number: ''
-project_name: C:\od\OneDrive\docs\three_d_printing_filament_storage_kallax_holder
+project_name: C:\gh\three_d_printing_filament_storage_kallax_holder
 size: oomlout
 thing:
   classification: oobb

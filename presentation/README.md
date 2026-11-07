@@ -1,6 +1,11 @@
 # KALLAX presentation package
 
-Revision 3, 6 November 2026. Agent handoff and build notes. Published instructions are in the root README and assembly PDF.
+README layout 4, 7 November 2026. The assembly geometry and seven-page PDF remain revision 3. Agent handoff and build notes follow.
+
+The checkout is now at `C:\gh\three_d_printing_filament_storage_kallax_holder`
+(moved 7 November 2026). Build scripts resolve their inputs and outputs from their
+own location. README previews, source-file references and Blender render targets
+use relative paths so the package can move with the checkout.
 
 Revision 3 combines printed parts and hardware in one BOM, adds verified MD5 alpha links and shortens the published copy. [source-notes.json](source-notes.json) retains the full draft. [scripts/revise_text.py](scripts/revise_text.py) applies the final editorial pass after configuration. Geometry is unchanged from revision 2.
 
@@ -49,6 +54,25 @@ The nominal span is not a guaranteed clearance fit. Measure the actual cabinet a
 The cabinet and filament rolls are illustrative geometry. The 4 x 4 shell is 1470 x 1470 x 390 mm; IKEA's current page gives a 1465 mm product height. The source model was retained as a setting, not presented as a furniture manufacturing drawing. Front reels are generic 200 x 60 mm, rear refills 200 x 58 mm, with five at 62 mm centres. Black holder materials override the default OOBB palette; teal, yellow and black remain on the illustrated filament.
 
 ## Rebuild
+
+The main README now uses Summary, Details, Parts and Assembly. Summary shows the installed system; Details hides all steel hardware and shows assembled printed parts only. Parts uses the exploded short holder and a complete hardware-only table for one cell. Assembly has six numbered actions with generated 480 px thumbnails linked to full-size images. Printed-part quantities remain in the full CSV and PDF.
+
+Hardware IDs and alpha codes were checked in the public `oomp_hardware_bolt_version_5` records on 2026-11-07. Names and IDs use those OOMP pages; codes use the requested `https://oom.lt/a/{code}` format. The web verification tool could not access the short URLs, so their live redirects are not claimed verified. The M6 rod is explicitly pending, as requested by the user; no supplier link is substituted.
+
+```powershell
+# Apply this project's four-section wording and hardware-link policy.
+python presentation/scripts/readme_layout.py
+
+# Rebuild README, published images, thumbnails and CSV; retain the existing PDF.
+python presentation/scripts/build.py --readme-only
+
+# Render the four README-specific views first.
+python presentation/scripts/build.py --readme-only --render --blender 'C:/Program Files/Blender Foundation/Blender 5.2/blender.exe'
+```
+
+The older `revise_text.py` is historical and refuses to overwrite the current layout. Use `readme_layout.py` or edit `project.json` directly. New views are `printed`, `step-fixed`, `step-sleeves` and `step-coupling`; the last two assembly actions reuse the section drawing and in-use view. Source notes retain the longer engineering text. The shared contract and template live in the OOBB base repository's `presentation/` folder.
+
+The local CommonMark preview was inspected at desktop and 390 px widths on 2026-11-07. Numbering remains continuous, thumbnails fit the text column and the hardware table scrolls horizontally on narrow screens. Clicking the first 480 px thumbnail opened its 2400 × 1470 px source. All four headings, local image links and six thumbnail files passed the package validator. `scripts/preview_readme.py` creates HTML only; inspect that preview with the browser.
 
 Run these commands from the project root. The Python scripts resolve paths from their own locations, so absolute script paths also work from another working directory.
 

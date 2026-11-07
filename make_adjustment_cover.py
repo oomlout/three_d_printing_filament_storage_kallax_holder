@@ -24,7 +24,7 @@ scad=(src/'3dpr.scad').read_text().replace('cylinder(h = 9,','cylinder(h = 14,')
 catalogue=ROOT/'parts'/('project_github_oomlout_three_d_printing_filament_storage_kallax_'+name)
 catalogue.mkdir(parents=True,exist_ok=True)
 for f in ('3dpr.stl','3dpr.scad'):shutil.copy2(dst/f,catalogue/f)
-meta={'source':str(src/'3dpr.stl'),'source_sha256':hashlib.sha256((src/'3dpr.stl').read_bytes()).hexdigest(),
+meta={'source':(src/'3dpr.stl').relative_to(ROOT).as_posix(),'source_sha256':hashlib.sha256((src/'3dpr.stl').read_bytes()).hexdigest(),
       'length_mm':14,'derived_by':'axial scaling of constant-section 9 mm source; cross-section unchanged',
       'watertight':bool(m.is_watertight),'bounds_mm':m.bounds.tolist(),'quantity_per_cell':4}
 (catalogue/'derivation.json').write_text(json.dumps(meta,indent=2))

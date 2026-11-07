@@ -13,7 +13,7 @@ from flask import Flask, abort, render_template, request
 from jinja2 import TemplateNotFound
 
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path(__file__).resolve().parent
 TEMPLATE_DIR = BASE_DIR / "web_pages"
 STATIC_DIR = TEMPLATE_DIR / "static"
 SITE_TITLE = BASE_DIR.name
@@ -96,6 +96,7 @@ def run_working_all_with_file_lock():
     # Launch directly without threading to avoid Flask socket issues
     try:
         # Create lock file first
+        LOCK_FILE.parent.mkdir(parents=True, exist_ok=True)
         current_pid = os.getpid()
         with open(LOCK_FILE, 'w') as f:
             f.write(str(current_pid))
@@ -255,15 +256,16 @@ def trigger_working_all():
     print("[DEBUG] No lock file - creating launcher batch file")
     
     # Create a temporary batch file with lock logic
-    working_dir = str(BASE_DIR)
     lock_file_str = str(LOCK_FILE).replace('/', '\\')
+    lock_dir_str = str(LOCK_FILE.parent).replace('/', '\\')
     
     launcher_bat = BASE_DIR / "run_working_all_launcher.bat"
     
     batch_content = f'''@echo off
 echo Starting working_all.py...
+if not exist "{lock_dir_str}" mkdir "{lock_dir_str}"
 echo %TIME% > "{lock_file_str}"
-cd /d "{working_dir}"
+cd /d "%~dp0"
 python working_all.py
 python working_all.py
 del "{lock_file_str}"

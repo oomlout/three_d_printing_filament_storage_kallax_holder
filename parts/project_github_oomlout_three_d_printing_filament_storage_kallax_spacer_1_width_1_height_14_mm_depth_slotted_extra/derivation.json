@@ -1,5 +1,5 @@
 {
-  "source": "C:\\od\\OneDrive\\docs\\three_d_printing_filament_storage_kallax_holder\\scad_output\\spacer_1_width_1_height_9_mm_depth_slotted_extra\\3dpr.stl",
+  "source": "scad_output/spacer_1_width_1_height_9_mm_depth_slotted_extra/3dpr.stl",
   "source_sha256": "177b73565bde965a9cd0da50c53c18f64003b64d7d36a7dd7eaf39529212027d",
   "length_mm": 14,
   "derived_by": "axial scaling of constant-section 9 mm source; cross-section unchanged",

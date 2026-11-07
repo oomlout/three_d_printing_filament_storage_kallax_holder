@@ -7,7 +7,7 @@ rows=list(csv.DictReader((root/'renders/parts_manifest.csv').open()))
 printed=[r for r in rows if r['source_stl'].endswith('.stl')]
 assert sum(int(r['quantity_per_cell']) for r in printed)==28
 for r in printed:
-    folder=Path(r['source_stl']).parent
+    folder=(root/r['source_stl']).parent
     assert folder.is_relative_to(root/'parts') and (folder/'3dpr.stl').exists()
     page='guide-3.png' if 'side frame' in r['part'] else 'guide-4.png'
     for src,name in [(page,'assembly_guide.png'),('guide-5.png','parts_list.png'),('guide-7.png','end_detail.png')]:

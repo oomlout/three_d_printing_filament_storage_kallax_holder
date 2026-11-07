@@ -3,7 +3,10 @@ import json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
 path=ROOT/'presentation/project.json'
-d=json.loads(path.read_text(encoding='utf-8'));d['revision']='3'
+d=json.loads(path.read_text(encoding='utf-8'))
+if d.get('readme', {}).get('layout') == 'four-section':
+    raise SystemExit('Revision 3 is historical. Use presentation/scripts/readme_layout.py for the current README.')
+d['revision']='3'
 codes={'H2':'hcps','H3':'1qsz8','H4':'9dg7e'}
 for p in d['hardware']:
     if p['ref']=='H1':

@@ -4,7 +4,10 @@ import oobb
 import oobb_base
 import yaml
 import os
+from pathlib import Path
 import scad
+
+PROJECT_ROOT = Path(__file__).resolve().parent
 ###### utilities
 
 def make_parts(**kwargs):
@@ -143,8 +146,7 @@ def make_scad_generic(part):
         kwargs_new.pop("save_type","")
         part_new["kwargs"] = kwargs_new
         import os
-        cwd = os.getcwd()
-        part_new["project_name"] = cwd
+        part_new["project_name"] = str(PROJECT_ROOT)
         part_new["id_oobb"] = thing["id"]
         #part_new["thing"] = thing
         part_new.pop("thing", "")
@@ -158,8 +160,7 @@ def make_scad_generic(part):
         kwargs_new.pop("save_type","")
         part_new["kwargs"] = kwargs_new
         import os
-        cwd = os.getcwd()
-        part_new["project_name"] = cwd
+        part_new["project_name"] = str(PROJECT_ROOT)
         part_new["id_oobb"] = thing["id"]
         part_new["thing"] = thing
         yaml.dump(part_new, file)
