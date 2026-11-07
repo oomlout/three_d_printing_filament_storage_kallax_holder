@@ -1,0 +1,6 @@
+* [shelf](shelf)
+  * [ikea_kallax](shelf/ikea_kallax)
+    * [cubby_box](shelf/ikea_kallax/cubby_box)
+    * [old](shelf/ikea_kallax/old)
+    * [tote](shelf/ikea_kallax/tote)
+    * [to_sort](shelf/ikea_kallax/to_sort)

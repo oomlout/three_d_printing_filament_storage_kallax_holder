@@ -1,0 +1,166 @@
+{
+  "status": "PASS",
+  "parts": [
+    {
+      "reference": "P1",
+      "path": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_3_height_9_mm_depth_short_extra/3dpr.stl",
+      "sha256": "2ca6a74a8f71e9e100c37a48c25b29bdd1b691abb6149fa2fbea5ee06b593c88",
+      "watertight": true,
+      "extents_mm": [
+        149.0,
+        43.9802,
+        9.0
+      ],
+      "bounds_mm": [
+        [
+          -74.5,
+          -21.9901,
+          0.0
+        ],
+        [
+          74.5,
+          21.9901,
+          9.0
+        ]
+      ]
+    },
+    {
+      "reference": "P2",
+      "path": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_8_height_9_mm_depth_short_extra/3dpr.stl",
+      "sha256": "be2069dc850b26ba8f8baaf3fdce8e4ed5f7acac1fa668e24233a1f0ce8418cb",
+      "watertight": true,
+      "extents_mm": [
+        149.0,
+        118.9802,
+        9.0
+      ],
+      "bounds_mm": [
+        [
+          -74.5,
+          -59.4901,
+          0.0
+        ],
+        [
+          74.5,
+          59.4901,
+          9.0
+        ]
+      ]
+    },
+    {
+      "reference": "P3",
+      "path": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_99_67_mm_depth_one_end_nut_extra/3dpr.stl",
+      "sha256": "905351aedecfc7977c919d7b6b7d785c17d63b08e107baa35e972ac4442b7317",
+      "watertight": true,
+      "extents_mm": [
+        14.0,
+        13.97238,
+        99.67
+      ],
+      "bounds_mm": [
+        [
+          -7.0,
+          -6.98619,
+          0.0
+        ],
+        [
+          7.0,
+          6.98619,
+          99.67
+        ]
+      ]
+    },
+    {
+      "reference": "P4",
+      "path": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_67_67_mm_depth_one_end_nut_extra/3dpr.stl",
+      "sha256": "b26fb85ed0796e327a202890134cc2e1b81a4f5bc3da13c1bb2349c9ffa8401c",
+      "watertight": true,
+      "extents_mm": [
+        14.0,
+        13.97238,
+        67.67
+      ],
+      "bounds_mm": [
+        [
+          -7.0,
+          -6.98619,
+          0.0
+        ],
+        [
+          7.0,
+          6.98619,
+          67.67
+        ]
+      ]
+    },
+    {
+      "reference": "P5",
+      "path": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_18_mm_depth_full_nut_extra/3dpr.stl",
+      "sha256": "b9e41b85ff7d203adc114721e9d69d4f11c9273dc167cbe776cc1f45f7a79d45",
+      "watertight": true,
+      "extents_mm": [
+        14.0,
+        13.97238,
+        18.0
+      ],
+      "bounds_mm": [
+        [
+          -7.0,
+          -6.98619,
+          0.0
+        ],
+        [
+          7.0,
+          6.98619,
+          18.0
+        ]
+      ]
+    },
+    {
+      "reference": "P6",
+      "path": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_7_mm_depth_full_nut_extra/3dpr.stl",
+      "sha256": "53aff98b14358295caf380fe07716b1b6921de1b3de83d3b3f471ad949585257",
+      "watertight": true,
+      "extents_mm": [
+        14.0,
+        13.97238,
+        7.0
+      ],
+      "bounds_mm": [
+        [
+          -7.0,
+          -6.98619,
+          0.0
+        ],
+        [
+          7.0,
+          6.98619,
+          7.0
+        ]
+      ]
+    },
+    {
+      "reference": "P7",
+      "path": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_7_mm_depth_slotted_extra/3dpr.stl",
+      "sha256": "a4a0d350f1415d870455a07aa036498e21bd552973e88bd341dc42285f115849",
+      "watertight": true,
+      "extents_mm": [
+        14.0,
+        13.5102,
+        7.0
+      ],
+      "bounds_mm": [
+        [
+          -7.0,
+          -6.98619,
+          0.0
+        ],
+        [
+          7.0,
+          6.52401,
+          7.0
+        ]
+      ]
+    }
+  ]
+}

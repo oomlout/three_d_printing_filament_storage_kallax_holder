@@ -1,0 +1,41 @@
+classification: project
+color: three_d_printing_filament_storage_kallax
+description_extra: short_extra
+description_main: side_11_width_2_5_height_9_mm_depth
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+id: project_github_oomlout_three_d_printing_filament_storage_kallax_side_11_width_2_5_height_9_mm_depth_short_extra
+id_oobb: oobb_part_three_d_printing_filament_storage_kallax_side_11_width_2_5_height_9_mm_depth_short_extra
+kwargs:
+  extra: short
+  filter: ''
+  height: 2.5
+  modes:
+  - 3dpr
+  navigation: false
+  oomp_classification: project
+  oomp_color: three_d_printing_filament_storage_kallax
+  oomp_description_extra: short_extra
+  oomp_description_main: side_11_width_2_5_height_9_mm_depth
+  oomp_manufacturer: ''
+  oomp_mode: project
+  oomp_part_number: ''
+  oomp_run: false
+  oomp_size: oomlout
+  oomp_type: github
+  overwrite: true
+  thickness: 9
+  type: three_d_printing_filament_storage_kallax_side
+  width: 11
+manufacturer: ''
+name: side
+part_number: ''
+project_name: C:\od\OneDrive\docs\three_d_printing_filament_storage_kallax_holder
+size: oomlout
+type: github

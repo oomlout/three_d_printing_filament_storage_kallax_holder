@@ -1,0 +1,11 @@
+part,quantity_per_cell,quantity_two_cells,source_stl
+Short side frame,4,8,C:\od\OneDrive\docs\three_d_printing_filament_storage_kallax_holder\parts\project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_3_height_9_mm_depth_short_extra\3dpr.stl
+Tall side frame,4,8,C:\od\OneDrive\docs\three_d_printing_filament_storage_kallax_holder\parts\project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_8_height_9_mm_depth_short_extra\3dpr.stl
+99.67 mm sleeve,8,16,C:\od\OneDrive\docs\three_d_printing_filament_storage_kallax_holder\parts\project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_99_67_mm_depth_one_end_nut_extra\3dpr.stl
+67.67 mm sleeve,4,8,C:\od\OneDrive\docs\three_d_printing_filament_storage_kallax_holder\parts\project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_67_67_mm_depth_one_end_nut_extra\3dpr.stl
+18 mm coupling nut housing,4,8,C:\od\OneDrive\docs\three_d_printing_filament_storage_kallax_holder\parts\project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_18_mm_depth_full_nut_extra\3dpr.stl
+14 mm slotted end cover,4,8,C:\od\OneDrive\docs\three_d_printing_filament_storage_kallax_holder\parts\project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_14_mm_depth_slotted_extra\3dpr.stl
+"M6 threaded rod, 300 mm",4,8,Purchased / cut and deburr
+"M6 fixed-end captive nut, 5 mm thick",4,8,Purchased; nominal dimensions illustrated
+"M6 coupling nut, 18 mm long, 10 mm AF",4,8,DIN 6334; supplier dimension verified
+"M6 hex-head full-thread bolt, 25 mm under-head length",4,8,"Calculated for nominal 335 mm opening, 4 mm nominal head"

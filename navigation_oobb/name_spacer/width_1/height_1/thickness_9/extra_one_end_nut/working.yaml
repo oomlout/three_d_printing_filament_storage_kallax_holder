@@ -1,0 +1,42 @@
+classification: project
+color: three_d_printing_filament_storage_kallax
+description_extra: one_end_nut_extra
+description_main: spacer_1_width_1_height_9_mm_depth
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+id: project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_9_mm_depth_one_end_nut_extra
+id_oobb: oobb_part_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_9_mm_depth_one_end_nut_extra
+kwargs:
+  extra: one_end_nut
+  filter: ''
+  height: 1
+  modes:
+  - 3dpr
+  navigation: true
+  oomp_classification: project
+  oomp_color: three_d_printing_filament_storage_kallax
+  oomp_description_extra: one_end_nut_extra
+  oomp_description_main: spacer_1_width_1_height_9_mm_depth
+  oomp_manufacturer: ''
+  oomp_mode: project
+  oomp_part_number: ''
+  oomp_run: true
+  oomp_size: oomlout
+  oomp_type: github
+  overwrite: true
+  thickness: 9
+  typ: all
+  type: three_d_printing_filament_storage_kallax_spacer
+  width: 1
+manufacturer: ''
+name: spacer
+part_number: ''
+project_name: C:\od\OneDrive\docs\three_d_printing_filament_storage_kallax_holder
+size: oomlout
+type: github

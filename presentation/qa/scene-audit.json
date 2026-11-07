@@ -1,0 +1,48 @@
+{
+  "cell": {
+    "Short side frame": 4,
+    "Tall side frame": 4,
+    "M6 coupling nut": 4,
+    "M6 captive fixed-end nut": 4,
+    "M6 adjustment bolt retaining nut": 4,
+    "Adjustment bolt |": 4,
+    "M6 x 300 mm threaded rod core": 4,
+    "D | 7 mm slip-on cover": 4,
+    "E | 7 mm retaining nut cover": 4
+  },
+  "empty": {
+    "Short side frame": 4,
+    "Tall side frame": 4,
+    "M6 coupling nut": 4,
+    "M6 captive fixed-end nut": 4,
+    "M6 adjustment bolt retaining nut": 4,
+    "Adjustment bolt |": 4,
+    "M6 x 300 mm threaded rod core": 4,
+    "D | 7 mm slip-on cover": 4,
+    "E | 7 mm retaining nut cover": 4
+  },
+  "loaded": {
+    "Short side frame": 4,
+    "Tall side frame": 4,
+    "M6 coupling nut": 4,
+    "M6 captive fixed-end nut": 4,
+    "M6 adjustment bolt retaining nut": 4,
+    "Adjustment bolt |": 4,
+    "M6 x 300 mm threaded rod core": 4,
+    "D | 7 mm slip-on cover": 4,
+    "E | 7 mm retaining nut cover": 4
+  },
+  "cabinet": {
+    "Short side frame": 8,
+    "Tall side frame": 8,
+    "M6 coupling nut": 8,
+    "M6 captive fixed-end nut": 8,
+    "M6 adjustment bolt retaining nut": 8,
+    "Adjustment bolt |": 8,
+    "M6 x 300 mm threaded rod core": 8,
+    "D | 7 mm slip-on cover": 8,
+    "E | 7 mm retaining nut cover": 8
+  },
+  "status": "PASS",
+  "scope": "Counts, nominal stack and axial bounds. This is not a physical fit or load test."
+}

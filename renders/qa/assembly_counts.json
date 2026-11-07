@@ -1,0 +1,50 @@
+{
+  "cell": {
+    "Short side frame": 4,
+    "Tall side frame": 4,
+    "M6 coupling nut": 4,
+    "M6 captive fixed-end nut": 4,
+    "Adjustment bolt |": 4,
+    "M6 x 300 mm threaded rod core": 4,
+    "D | 14 mm slip-on cover": 4
+  },
+  "empty": {
+    "Short side frame": 4,
+    "Tall side frame": 4,
+    "M6 coupling nut": 4,
+    "M6 captive fixed-end nut": 4,
+    "Adjustment bolt |": 4,
+    "M6 x 300 mm threaded rod core": 4,
+    "D | 14 mm slip-on cover": 4
+  },
+  "loaded": {
+    "Short side frame": 4,
+    "Tall side frame": 4,
+    "M6 coupling nut": 4,
+    "M6 captive fixed-end nut": 4,
+    "Adjustment bolt |": 4,
+    "M6 x 300 mm threaded rod core": 4,
+    "D | 14 mm slip-on cover": 4
+  },
+  "cabinet": {
+    "Short side frame": 8,
+    "Tall side frame": 8,
+    "M6 coupling nut": 8,
+    "M6 captive fixed-end nut": 8,
+    "Adjustment bolt |": 8,
+    "M6 x 300 mm threaded rod core": 8,
+    "D | 14 mm slip-on cover": 8
+  },
+  "axial_mm": {
+    "printed_span": 335.01,
+    "bolt_length": 25,
+    "coupler_length": 18,
+    "cover_length": 14,
+    "rod_engagement": 5.99,
+    "bolt_engagement": 7,
+    "tip_gap": 5.01,
+    "head_recess_depth": 5,
+    "nominal_head_thickness": 4,
+    "head_recess_below_face": 1
+  }
+}

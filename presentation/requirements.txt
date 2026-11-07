@@ -1,0 +1,6 @@
+reportlab>=4,<5
+Pillow>=10,<13
+PyMuPDF>=1.24,<2
+# Optional: production mesh audit
+trimesh>=4,<5
+numpy>=1.26,<3

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "printed_parts": 32,
+  "hardware_pieces": 20,
+  "pdf_pages": 7,
+  "local_readme_links_checked": 17,
+  "published_images": 15,
+  "errors": [],
+  "scope": "Digital consistency only. External link identity requires source inspection; physical build is untested."
+}

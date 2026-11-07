@@ -1,0 +1,9 @@
+{
+  "pdf_pages": 7,
+  "printed_parts_per_cell": 28,
+  "cover_watertight": true,
+  "cover_scad_matches_stl": true,
+  "cover_length_mm": 14.0,
+  "nominal_printed_width_mm": 335.01,
+  "bolt_under_head_mm": 25
+}

@@ -1,0 +1,237 @@
+classification: project
+color: three_d_printing_filament_storage_kallax
+description_extra: slotted_extra
+description_main: spacer_1_width_1_height_67_67_mm_depth
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+id: project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_67_67_mm_depth_slotted_extra
+id_oobb: oobb_part_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_67_67_mm_depth_slotted_extra
+kwargs:
+  extra: slotted
+  filter: ''
+  height: 1
+  modes:
+  - 3dpr
+  navigation: true
+  oomp_classification: project
+  oomp_color: three_d_printing_filament_storage_kallax
+  oomp_description_extra: slotted_extra
+  oomp_description_main: spacer_1_width_1_height_67_67_mm_depth
+  oomp_manufacturer: ''
+  oomp_mode: project
+  oomp_part_number: ''
+  oomp_run: true
+  oomp_size: oomlout
+  oomp_type: github
+  overwrite: true
+  thickness: 67.67
+  typ: all
+  type: three_d_printing_filament_storage_kallax_spacer
+  width: 1
+manufacturer: ''
+name: spacer
+part_number: ''
+project_name: C:\od\OneDrive\docs\three_d_printing_filament_storage_kallax_holder
+size: oomlout
+thing:
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 67.67
+      extra: slotted
+      h: 67.67
+      height: 1
+      pos:
+      - 0
+      - 0
+      - 0
+      r: 7.0
+      shape: cylinder
+      type: positive
+      width: 1
+  - - - extra: slotted
+        height: 1
+        m: '#'
+        pos:
+        - -2.5
+        - 0.0
+        - 0
+        shape: cube
+        size:
+        - 5
+        - 20
+        - 67.67
+        type: negative
+        width: 1
+  - - - - inclusion: laser
+          pos:
+          - 0.0
+          - 0.0
+          - 0
+          r: 3.0
+          shape: hole
+          type: negative
+    - - - inclusion: 3dpr
+          pos:
+          - 0.0
+          - 0.0
+          - 0
+          r: 3.25
+          shape: hole
+          type: negative
+    - - - inclusion: 'true'
+          pos:
+          - 0.0
+          - 0.0
+          - 0
+          r: 3.0
+          shape: hole
+          type: negative
+    - - - inclusion: laser
+          pos:
+          - 0.0
+          - 0.0
+          - 0
+          r: 1.5
+          shape: hole
+          type: negative
+    - - - inclusion: 3dpr
+          pos:
+          - 0.0
+          - 0.0
+          - 0
+          r: 1.8
+          shape: hole
+          type: negative
+    - - - inclusion: 'true'
+          pos:
+          - 0.0
+          - 0.0
+          - 0
+          r: 1.5
+          shape: hole
+          type: negative
+  components_objects:
+  - depth: 67.67
+    extra: slotted
+    filter: ''
+    height: 1
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: three_d_printing_filament_storage_kallax
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: all
+    shape: oobb_plate
+    thickness: 67.67
+    typ: all
+    type: positive
+    width: 1
+  - extra: slotted
+    filter: ''
+    height: 1
+    m: '#'
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: three_d_printing_filament_storage_kallax
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - 10.0
+    - 0
+    save_type: all
+    shape: oobb_cube
+    size:
+    - 5
+    - 20
+    - 67.67
+    thickness: 67.67
+    typ: all
+    type: n
+    width: 1
+  - both_holes: true
+    depth: 67.67
+    extra: slotted
+    filter: ''
+    height: 1
+    m: '#'
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: three_d_printing_filament_storage_kallax
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: all
+    shape: oobb_holes
+    thickness: 67.67
+    typ: all
+    type: p
+    width: 1
+  components_string:
+  - oobb_plate_shape_positive_type_67.67_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_67.67_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_three_d_printing_filament_storage_kallax_oomp_color_slotted_extra
+  - oobb_cube_shape_n_type_0_10.0_0_pos_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_67.67_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_three_d_printing_filament_storage_kallax_oomp_color_slotted_extra_5_20_67.67_size
+  - oobb_holes_shape_p_type_67.67_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_67.67_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_three_d_printing_filament_storage_kallax_oomp_color_slotted_extra_true_both_holes
+  description: three d printing filament storage kallax spacer 1x1x67.67
+  description_extra: slotted_extra
+  description_main: 1_width_1_height_67_67_mm_depth
+  extra: slotted
+  folder: C:\gh\oomlout_oobb_version_4_generated_parts\parts\oobb_part_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_67_67_mm_depth_slotted_extra
+  height: 1
+  height_mm: 14
+  id: oobb_part_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_67_67_mm_depth_slotted_extra
+  link_main: https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/navigation_oomp/oobb/part/three_d_printing_filament_storage_kallax_spacer/1_width_1_height_67_67_mm_depth/slotted_extra/part
+  link_redirect: https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/parts/oobb_three_d_printing_filament_storage_kallax_spacer_01_01_67d67_ex_slotted
+  manufacturer: ''
+  name: Oobb Part Three D Printing Filament Storage Kallax Spacer 1 Width 1 Height
+    67 67 mm Depth Slotted Extra
+  name_short: Three D Printing Filament Storage
+  part_number: ''
+  short_name: ''
+  size: three_d_printing_filament_storage_kallax_spacer
+  thickness: 67.67
+  thickness_mm: 67.67
+  type: part
+  width: 1
+  width_mm: 14
+type: github

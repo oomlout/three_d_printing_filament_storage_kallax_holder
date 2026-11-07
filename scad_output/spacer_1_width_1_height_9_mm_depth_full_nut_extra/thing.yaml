@@ -1,0 +1,274 @@
+classification: project
+color: three_d_printing_filament_storage_kallax
+description_extra: full_nut_extra
+description_main: spacer_1_width_1_height_9_mm_depth
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+id: project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_9_mm_depth_full_nut_extra
+id_oobb: oobb_part_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_9_mm_depth_full_nut_extra
+kwargs:
+  extra: full_nut
+  filter: ''
+  height: 1
+  modes:
+  - 3dpr
+  navigation: true
+  oomp_classification: project
+  oomp_color: three_d_printing_filament_storage_kallax
+  oomp_description_extra: full_nut_extra
+  oomp_description_main: spacer_1_width_1_height_9_mm_depth
+  oomp_manufacturer: ''
+  oomp_mode: project
+  oomp_part_number: ''
+  oomp_run: true
+  oomp_size: oomlout
+  oomp_type: github
+  overwrite: true
+  thickness: 9
+  typ: all
+  type: three_d_printing_filament_storage_kallax_spacer
+  width: 1
+manufacturer: ''
+name: spacer
+part_number: ''
+project_name: C:\od\OneDrive\docs\three_d_printing_filament_storage_kallax_holder
+size: oomlout
+thing:
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 9
+      extra: full_nut
+      h: 9
+      height: 1
+      pos:
+      - 0
+      - 0
+      - 0
+      r: 7.0
+      shape: cylinder
+      type: positive
+      width: 1
+  - - objects:
+      - depth: 9
+        extra: full_nut
+        height: 9
+        inclusion: laser
+        m: '#'
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 5.77
+        shape: polyg
+        sides: 6
+        type: positive
+        width: 1
+      - depth: 9
+        extra: full_nut
+        height: 9
+        inclusion: 3dpr
+        m: '#'
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 5.914249999999999
+        shape: polyg
+        sides: 6
+        type: positive
+        width: 1
+      - depth: 9
+        extra: full_nut
+        height: 9
+        inclusion: 'true'
+        m: '#'
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 5.77
+        shape: polyg
+        sides: 6
+        type: positive
+        width: 1
+      pos:
+      - 0
+      - 0
+      - 0
+      rot:
+      - 0
+      - 0
+      - 0
+      type: rotation
+      typetype: n
+  - - - - inclusion: laser
+          pos:
+          - 0.0
+          - 0.0
+          - 0
+          r: 3.0
+          shape: hole
+          type: negative
+    - - - inclusion: 3dpr
+          pos:
+          - 0.0
+          - 0.0
+          - 0
+          r: 3.25
+          shape: hole
+          type: negative
+    - - - inclusion: 'true'
+          pos:
+          - 0.0
+          - 0.0
+          - 0
+          r: 3.0
+          shape: hole
+          type: negative
+    - - - inclusion: laser
+          pos:
+          - 0.0
+          - 0.0
+          - 0
+          r: 1.5
+          shape: hole
+          type: negative
+    - - - inclusion: 3dpr
+          pos:
+          - 0.0
+          - 0.0
+          - 0
+          r: 1.8
+          shape: hole
+          type: negative
+    - - - inclusion: 'true'
+          pos:
+          - 0.0
+          - 0.0
+          - 0
+          r: 1.5
+          shape: hole
+          type: negative
+  components_objects:
+  - depth: 9
+    extra: full_nut
+    filter: ''
+    height: 1
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: three_d_printing_filament_storage_kallax
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: all
+    shape: oobb_plate
+    thickness: 9
+    typ: all
+    type: positive
+    width: 1
+  - depth: 9
+    extra: full_nut
+    filter: ''
+    height: 1
+    m: '#'
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: three_d_printing_filament_storage_kallax
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - 0
+    - 0
+    radius_name: m6
+    save_type: all
+    shape: oobb_nut
+    thickness: 9
+    typ: all
+    type: n
+    width: 1
+  - both_holes: true
+    depth: 9
+    extra: full_nut
+    filter: ''
+    height: 1
+    m: '#'
+    modes:
+    - 3dpr
+    navigation: true
+    oomp_classification: project
+    oomp_color: three_d_printing_filament_storage_kallax
+    oomp_description_extra: ''
+    oomp_description_main: ''
+    oomp_manufacturer: ''
+    oomp_mode: project
+    oomp_part_number: ''
+    oomp_run: true
+    oomp_size: oomlout
+    oomp_type: github
+    overwrite: true
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: all
+    shape: oobb_holes
+    thickness: 9
+    typ: all
+    type: p
+    width: 1
+  components_string:
+  - oobb_plate_shape_positive_type_9_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_three_d_printing_filament_storage_kallax_oomp_color_full_nut_extra
+  - oobb_nut_shape_n_type_m6_radius_name_9_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_three_d_printing_filament_storage_kallax_oomp_color_full_nut_extra
+  - oobb_holes_shape_p_type_9_depth_all_typ_all_save_type_true_navigation_true_overwrite_'3dpr'_modes_project_oomp_mode_true_oomp_run_1_width_1_height_9_thickness_project_oomp_classification_github_oomp_type_oomlout_oomp_size_three_d_printing_filament_storage_kallax_oomp_color_full_nut_extra_true_both_holes
+  description: three d printing filament storage kallax spacer 1x1x9
+  description_extra: full_nut_extra
+  description_main: 1_width_1_height_9_mm_depth
+  extra: full_nut
+  folder: C:\gh\oomlout_oobb_version_4_generated_parts\parts\oobb_part_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_9_mm_depth_full_nut_extra
+  height: 1
+  height_mm: 14
+  id: oobb_part_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_9_mm_depth_full_nut_extra
+  link_main: https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/navigation_oomp/oobb/part/three_d_printing_filament_storage_kallax_spacer/1_width_1_height_9_mm_depth/full_nut_extra/part
+  link_redirect: https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/parts/oobb_three_d_printing_filament_storage_kallax_spacer_01_01_09_ex_full_nut
+  manufacturer: ''
+  name: Oobb Part Three D Printing Filament Storage Kallax Spacer 1 Width 1 Height
+    9 mm Depth Full Nut Extra
+  name_short: Three D Printing Filament Storage
+  part_number: ''
+  short_name: ''
+  size: three_d_printing_filament_storage_kallax_spacer
+  thickness: 9
+  thickness_mm: 9
+  type: part
+  width: 1
+  width_mm: 14
+type: github

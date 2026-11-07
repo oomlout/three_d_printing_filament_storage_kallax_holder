@@ -1,0 +1,37 @@
+{
+  "checked_on": "2026-11-06",
+  "method": "Local catalogue discovery followed by connected GitHub fetch of the public records; manufacturer/supplier page for coupling dimensions",
+  "records": [
+    {
+      "oomp_id": "hardware_nut_m6",
+      "md5_6_alpha": "hcps",
+      "url": "https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/hardware_nut_m6",
+      "inspected_file": "readme.md",
+      "result": "M6 ordinary nut identity confirmed; 5 mm thickness is the nominal model assumption"
+    },
+    {
+      "oomp_id": "hardware_nut_m6_coupling",
+      "md5_6_alpha": "1qsz8",
+      "url": "https://github.com/oomlout/oomlout_oomp_version_1_messy/tree/main/parts/hardware_nut_m6_coupling",
+      "inspected_file": "readme.md",
+      "result": "M6 coupling identity confirmed; length specified separately"
+    },
+    {
+      "oomp_id": "hardware_set_screw_m6_25_mm_length",
+      "md5_6_alpha": "9dg7e",
+      "url": "https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_set_screw_m6_25_mm_length",
+      "inspected_file": "working.yaml",
+      "result": "M6 x 25 mm hex head, full thread explicitly identified"
+    },
+    {
+      "oomp_id": null,
+      "requirement": "M6 threaded rod cut to 300 mm",
+      "url": "https://www.ecfibreglasssupplies.co.uk/grade-48-zinc-threaded-rod-m6-x-300-mm",
+      "result": "Supplier page returned HTTP 200; title confirms M6 x 300 mm zinc threaded rod. No exact OOMP record verified."
+    },
+    {
+      "url": "https://www.accu.co.uk/hexagonal-stud-connector-nuts/62290-HTBN-M6-A2",
+      "result": "DIN 6334 M6 coupling: 18 mm long, 10 mm across flats"
+    }
+  ]
+}
