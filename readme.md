@@ -5,7 +5,7 @@ AI-generated images and instructions. Errors possible.
 
 ## Summary
 
-Two holders store five front filament reels and five raised rear refills in one IKEA KALLAX cell.
+This project provides 3D-printable holders for storing 3D printer filament in an IKEA KALLAX shelving unit. Two holders store five reels at the front and five filament refills without spools on a raised row at the back.
 
 ![AI-generated CAD render: finished filament storage in a KALLAX cell](presentation/images/cell.png)
 

@@ -32,7 +32,7 @@ steps = [
 ]
 data['readme'].update(
     layout='four-section',
-    summary='Two holders store five front filament reels and five raised rear refills in one IKEA KALLAX cell.',
+    summary='This project provides 3D-printable holders for storing 3D printer filament in an IKEA KALLAX shelving unit. Two holders store five reels at the front and five filament refills without spools on a raised row at the back.',
     hero_image='cell.png', hero_alt='AI-generated CAD render: finished filament storage in a KALLAX cell',
     details='Each holder uses four side frames and two adjustable M6 rails. The short and tall holders are independent. Nominal width: 335 mm. Rail heights: 37 and 112 mm. Print all 32 plastic pieces in black.',
     details_image='printed.png', details_alt='AI-generated CAD render: assembled printed parts, with hardware, filament and cabinet omitted',
