@@ -1,5 +1,11 @@
 # KALLAX presentation package
 
+**Superseded on 19 November 2026.** This folder preserves the previous layout and
+engineering notes. The active wave-drive-style booklet, offline viewer and
+version README are generated with `python working.py`. See
+[the current documentation handoff](../DOCUMENTATION.md). Do not run the old
+commands below against the active landing README.
+
 README layout 4, 7 November 2026. The assembly geometry and seven-page PDF remain revision 3. Agent handoff and build notes follow.
 
 The checkout is now at `C:\gh\three_d_printing_filament_storage_kallax_holder`

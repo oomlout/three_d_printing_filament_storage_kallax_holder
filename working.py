@@ -1,60 +1,15 @@
-import oom_markdown
-import os
+"""Regenerate documentation from the current production STL files."""
 import argparse
 
-import robo
-import working_helper
-
-#process
-#  locations set in working_parts.ods 
-#  export to working_parts.csv
-#  put components on the right side of the board
-#  run this script
-
 def main(**kwargs):
-    pass
-    
-
-    #make_readme(**kwargs)
-    #working_helper.run_utility(**kwargs)
-    
-    
-   #ai_stuff
-    if True:
-        import working_oomp
-        working_oomp.main(**kwargs)
-        kwargs["mode"] = "all"
-        working_helper.run_robo_ai(**kwargs)
-
-
-    #summary
-    if True:
-        import working_summary
-        summaries_filters = []
-        summaries_filters.append(["","all"])
-        kwargs["summaries_filters"] = summaries_filters
-        working_summary.main(**kwargs)
-        
-        
-
-def make_readme(**kwargs):
-    os.system("generate_resolution.bat")
-    oom_markdown.generate_readme_project(**kwargs)
-    #oom_markdown.generate_readme_teardown(**kwargs)
-
+    import working_oomp
+    kwargs.setdefault('assembly_documentation', True)
+    return working_oomp.main(**kwargs)
 
 if __name__ == '__main__':
-    # parse arguments
-    argparser = argparse.ArgumentParser(description='project description')
-    #--file_input -fi
-    argparser.add_argument('--file_input', '-fi', type=str, default='', help='file_input')    
-    args = argparser.parse_args()
-    kwargs = {}
-    # update kwargs with args
-    kwargs.update(vars(args))
-
-    
-    
-    
-    
-    main(**kwargs)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--assembly-only', action='store_true', help='Rebuild instructions from current production meshes')
+    parser.add_argument('--no-renders', action='store_true', help='Recompose using hash-validated cached diagrams')
+    parser.add_argument('--blender', help='Blender executable; defaults to PATH')
+    args = parser.parse_args()
+    main(render=not args.no_renders, blender=args.blender)

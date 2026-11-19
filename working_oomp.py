@@ -2,6 +2,12 @@ import oomp
 import copy
 
 def main(**kwargs):
+    if kwargs.get("assembly_documentation", False):
+        import working_oomp_populate
+        import working_scad
+        kwargs = copy.deepcopy(kwargs)
+        kwargs.setdefault("configuration", working_oomp_populate.define())
+        return working_scad.main(**kwargs)
     load_parts(**kwargs)
 
 def load_parts(**kwargs):
@@ -162,5 +168,4 @@ def create_generic(**kwargs):
 
 if __name__ == "__main__":
     # run the function
-    load_parts()    
-    
+    load_parts()

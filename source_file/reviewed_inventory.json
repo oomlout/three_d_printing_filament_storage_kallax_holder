@@ -1,0 +1,222 @@
+{
+  "printed_parts": [
+    {
+      "ref": "P1",
+      "name": "Short side frame",
+      "quantity": 4,
+      "spec": "149 x 44 x 9 mm",
+      "part": "side_10_width_3_height_9_mm_depth_short_extra",
+      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_3_height_9_mm_depth_short_extra/3dpr.stl",
+      "verification": "Existing source STL; physical fit untested",
+      "md5_6_alpha": null,
+      "code_verified": "No md5_6_alpha field in the local catalogue record; direct STL link retained"
+    },
+    {
+      "ref": "P2",
+      "name": "Tall side frame",
+      "quantity": 4,
+      "spec": "149 x 119 x 9 mm",
+      "part": "side_10_width_8_height_9_mm_depth_short_extra",
+      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_8_height_9_mm_depth_short_extra/3dpr.stl",
+      "verification": "Existing source STL; physical fit untested",
+      "md5_6_alpha": null,
+      "code_verified": "No md5_6_alpha field in the local catalogue record; direct STL link retained"
+    },
+    {
+      "ref": "P3",
+      "name": "Long sleeve",
+      "quantity": 8,
+      "spec": "99.67 mm long; one-end hex pocket",
+      "part": "spacer_1_width_1_height_99_67_mm_depth_one_end_nut_extra",
+      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_99_67_mm_depth_one_end_nut_extra/3dpr.stl",
+      "verification": "Existing source STL; physical fit untested",
+      "md5_6_alpha": null,
+      "code_verified": "No md5_6_alpha field in the local catalogue record; direct STL link retained"
+    },
+    {
+      "ref": "P4",
+      "name": "Centre sleeve",
+      "quantity": 4,
+      "spec": "67.67 mm long; one-end hex pocket",
+      "part": "spacer_1_width_1_height_67_67_mm_depth_one_end_nut_extra",
+      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_67_67_mm_depth_one_end_nut_extra/3dpr.stl",
+      "verification": "Existing source STL; physical fit untested",
+      "md5_6_alpha": null,
+      "code_verified": "No md5_6_alpha field in the local catalogue record; direct STL link retained"
+    },
+    {
+      "ref": "P5",
+      "name": "Coupling housing",
+      "quantity": 4,
+      "spec": "18 mm long; full hex bore",
+      "part": "spacer_1_width_1_height_18_mm_depth_full_nut_extra",
+      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_18_mm_depth_full_nut_extra/3dpr.stl",
+      "verification": "Existing source STL; physical fit untested",
+      "md5_6_alpha": null,
+      "code_verified": "No md5_6_alpha field in the local catalogue record; direct STL link retained"
+    },
+    {
+      "ref": "P6",
+      "name": "Retaining nut cover",
+      "quantity": 4,
+      "spec": "7 mm long; full hex bore",
+      "part": "spacer_1_width_1_height_7_mm_depth_full_nut_extra",
+      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_7_mm_depth_full_nut_extra/3dpr.stl",
+      "verification": "Existing source STL; physical fit untested",
+      "md5_6_alpha": null,
+      "code_verified": "No md5_6_alpha field in the local catalogue record; direct STL link retained"
+    },
+    {
+      "ref": "P7",
+      "name": "Slotted cover",
+      "quantity": 4,
+      "spec": "7 mm long; open slot",
+      "part": "spacer_1_width_1_height_7_mm_depth_slotted_extra",
+      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_7_mm_depth_slotted_extra/3dpr.stl",
+      "verification": "Existing source STL; physical fit untested",
+      "md5_6_alpha": null,
+      "code_verified": "No md5_6_alpha field in the local catalogue record; direct STL link retained"
+    }
+  ],
+  "hardware": [
+    {
+      "ref": "H1",
+      "name": "M6 threaded rod",
+      "quantity": 4,
+      "spec": "300 mm cut length; M6 x 1.0",
+      "url": null,
+      "oomp_id": null,
+      "verification": "User requested OOMP record pending on 2026-11-07; no supplier link in README.",
+      "md5_6_alpha": null,
+      "short_url": null,
+      "catalogue_status": "pending"
+    },
+    {
+      "ref": "H2",
+      "name": "M6 hex nut",
+      "quantity": 8,
+      "spec": "10 mm AF; 5 mm nominal thickness",
+      "url": "https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_nut_m6",
+      "oomp_id": "hardware_nut_m6",
+      "verification": "OOMP identity verified 2026-11-06; actual thickness to be checked",
+      "md5_6_alpha": "hcps",
+      "code_verified": "Exact ID and md5_6_alpha checked in public OOMP working.yaml, 2026-11-07. Short URL follows requested format; redirect unavailable to verification tool.",
+      "short_url": "https://oom.lt/a/hcps"
+    },
+    {
+      "ref": "H3",
+      "name": "M6 coupling nut",
+      "quantity": 4,
+      "spec": "DIN 6334; 18 mm long; 10 mm AF",
+      "url": "https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_nut_m6_coupling",
+      "oomp_id": "hardware_nut_m6_coupling",
+      "verification": "OOMP identity verified 2026-11-06; 18 mm dimensions from Accu",
+      "md5_6_alpha": "1qsz8",
+      "code_verified": "Exact ID and md5_6_alpha checked in public OOMP working.yaml, 2026-11-07. Short URL follows requested format; redirect unavailable to verification tool.",
+      "short_url": "https://oom.lt/a/1qsz8"
+    },
+    {
+      "ref": "H4",
+      "name": "M6 x 25 hex-head bolt, fully threaded",
+      "quantity": 4,
+      "spec": "25 mm under head; M6 x 1.0; DIN 933",
+      "url": "https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_set_screw_m6_25_mm_length",
+      "oomp_id": "hardware_set_screw_m6_25_mm_length",
+      "verification": "OOMP full-thread hex-head identity verified 2026-11-06; no grub screw",
+      "md5_6_alpha": "9dg7e",
+      "code_verified": "Exact ID and md5_6_alpha checked in public OOMP working.yaml, 2026-11-07. Short URL follows requested format; redirect unavailable to verification tool.",
+      "short_url": "https://oom.lt/a/9dg7e"
+    }
+  ],
+  "geometry": {
+    "opening_nominal_mm": 335,
+    "span_mm": 335.01,
+    "rod_mm": 300,
+    "bolt_mm": 25,
+    "coupler_mm": 18,
+    "clip_mm": 7,
+    "nut_cover_mm": 7,
+    "rod_engagement_mm": 5.99,
+    "bolt_engagement_mm": 7,
+    "tip_gap_mm": 5.01,
+    "printed_count": 32,
+    "axial_stack": [
+      [
+        "Frame 1",
+        0,
+        9
+      ],
+      [
+        "Long sleeve",
+        9,
+        108.67
+      ],
+      [
+        "Frame 2",
+        108.67,
+        117.67
+      ],
+      [
+        "Centre sleeve",
+        117.67,
+        185.34
+      ],
+      [
+        "Frame 3",
+        185.34,
+        194.34
+      ],
+      [
+        "Long sleeve",
+        194.34,
+        294.01
+      ],
+      [
+        "Coupling housing",
+        294.01,
+        312.01
+      ],
+      [
+        "Slotted cover",
+        312.01,
+        319.01
+      ],
+      [
+        "Retaining nut cover",
+        319.01,
+        326.01
+      ],
+      [
+        "Frame 4",
+        326.01,
+        335.01
+      ]
+    ],
+    "hardware_intervals": {
+      "fixed_nut": [
+        0,
+        5
+      ],
+      "rod": [
+        0,
+        300
+      ],
+      "coupling": [
+        294.01,
+        312.01
+      ],
+      "retaining_nut": [
+        321.01,
+        326.01
+      ],
+      "bolt_shank": [
+        305.01,
+        330.01
+      ],
+      "bolt_head": [
+        330.01,
+        334.01
+      ]
+    }
+  }
+}

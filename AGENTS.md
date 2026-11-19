@@ -8,9 +8,45 @@ Resolve project files relative to the script or repository root. Avoid embedding
 the local checkout path in launchers, manifests, previews or new scripts. Existing
 OOMP part IDs and GitHub URLs stay the same when the checkout moves.
 
-The current presentation sources are `presentation/` and `render_kallax.py`.
-See `presentation/README.md` for build and validation commands. `renders/`
-contains historical outputs.
+The current documentation recipe is `working_oomp_populate.py`. Follow
+`C:/gh/oomlout_oobb_version_5/ASSEMBLY_INSTRUCTIONS_GUIDE.md` (style 4),
+`README_GUIDELINES.md` and `RENDER_STYLE.md`. The wave-drive assembly book is
+the visual reference. This project's explicit all-black print colour overrides
+the normal teal palette.
+
+Run `python working.py` for the populate -> working_oomp -> working_scad
+documentation build. It uses existing production STLs; it does not regenerate
+or change the mechanical design. `--no-renders` recomposes from hash-validated
+cached diagrams. See `DOCUMENTATION.md` for commands, deliverables and limits.
+
+Keep active documentation inside the one-cell version's `parts/` directory.
+Use a compact version-index landing README, a full version README, ASSEMBLY.md,
+an A4 landscape booklet, a standalone offline HTML viewer, manifest, CSV,
+page PNGs, panel PNGs, thumbnails, contact sheet and validation report.
+The PDF and default HTML viewer both show four steps in a 2 x 2 grid on each
+landscape A4 instruction page. Open the viewer at steps 1-4; navigate by page.
+Preserve landscape pages on phones and provide zoom rather than single-step reflow.
+Do not edit generated documents. Author labels, steps, styles and book text
+in populate. Reusable helpers live in `components/kallax/`.
+
+Each cell has four short frames, four tall frames and four 300 mm M6 rods.
+The holders are independent. Preserve recessed fixed nuts and bolt heads,
+one coupling per rail, inner retaining nuts, 7 mm hex covers and 7 mm slotted
+covers. The rod OOMP record remains pending by user instruction; do not invent
+a catalogue record or shortlink. Printed parts have no alpha codes.
+
+Use cumulative source-CAD views, black typography, no arrows or prose on
+instruction panels, and the official black Oomlout symbol. Every physical
+instance must appear exactly once in the added inventory. Include both holders
+in the written and pictorial sequence. Keep prior installed pieces in view.
+
+The original `presentation/` package and `render_kallax.py` are historical
+layout-4 sources, retained for traceability. They are not the active build.
+Do not let old scripts replace the new landing README or booklet. New outputs
+belong in the version directory, not in another root presentation folder.
+
+Hosting is separate from generation. Only set a hosted viewer URL after it
+has been published and checked. Do not describe a GitHub HTML blob as a viewer.
 
 Shared OOMP data, OOBB libraries, system fonts, installed applications and the
 cross-project lock under `C:\gh\oomlout_base\lock` are external dependencies;

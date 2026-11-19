@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "page_count": 8,
+  "card_count": 13,
+  "paper_mm": [
+    297,
+    210
+  ],
+  "panels_per_instruction_page": 4,
+  "page_roles": [
+    "cover",
+    "details",
+    "instructions",
+    "instructions",
+    "instructions",
+    "summary",
+    "parts",
+    "back"
+  ],
+  "parts_summary_page": 7,
+  "printed_parts_in_summary": 32,
+  "hardware_items_in_summary": 20,
+  "summary_step": 13,
+  "page_order": "Reader order; signature padded. Apply booklet imposition only at print time.",
+  "physical_items": 52,
+  "quantity_audit": "Every physical item introduced once; singleton multipliers hidden; printed and hardware summary reconciled to production inventory; identical hardware roles combined",
+  "layout_checks": "Text fits; only black typography; compact URL code/prefix hierarchy; no instruction prose or arrows; blank spacer has no marks",
+  "physical_validation": "Not physically assembled or load tested",
+  "pdf_sha256": "9eb66e36ab996b7cf490544002243b02408d8b48dfc0fa9fe5d476f9b26b4a2c",
+  "html_sha256": "fca059c9d03c7071b4f4a583226a0354386716f33d7a7c6e557198f19e7369f2",
+  "html_slides": 8,
+  "html_steps": 12,
+  "html_self_contained": true,
+  "html_layout": "a4-landscape-four-step",
+  "html_instruction_page_steps": [
+    [
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      5,
+      6,
+      7,
+      8
+    ],
+    [
+      9,
+      10,
+      11,
+      12
+    ]
+  ],
+  "source_sha256": {
+    "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_3_height_9_mm_depth_short_extra/3dpr.stl": "2ca6a74a8f71e9e100c37a48c25b29bdd1b691abb6149fa2fbea5ee06b593c88",
+    "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_8_height_9_mm_depth_short_extra/3dpr.stl": "be2069dc850b26ba8f8baaf3fdce8e4ed5f7acac1fa668e24233a1f0ce8418cb",
+    "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_99_67_mm_depth_one_end_nut_extra/3dpr.stl": "905351aedecfc7977c919d7b6b7d785c17d63b08e107baa35e972ac4442b7317",
+    "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_67_67_mm_depth_one_end_nut_extra/3dpr.stl": "b26fb85ed0796e327a202890134cc2e1b81a4f5bc3da13c1bb2349c9ffa8401c",
+    "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_18_mm_depth_full_nut_extra/3dpr.stl": "b9e41b85ff7d203adc114721e9d69d4f11c9273dc167cbe776cc1f45f7a79d45",
+    "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_7_mm_depth_full_nut_extra/3dpr.stl": "53aff98b14358295caf380fe07716b1b6921de1b3de83d3b3f471ad949585257",
+    "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_7_mm_depth_slotted_extra/3dpr.stl": "a4a0d350f1415d870455a07aa036498e21bd552973e88bd341dc42285f115849"
+  },
+  "render_signature": "b6bfba196575ea64f1275d572b3fd8a17313b8a9427aa73efc652a325a3ee8e6",
+  "cumulative_inventory_verified": true,
+  "hosting": "Not published; standalone HTML generated",
+  "local_markdown_links": 70,
+  "thumbnail_count": 12,
+  "viewer_embedded_assets": 8,
+  "viewer_external_asset_count": 0,
+  "viewer_pages_match_pdf": true
+}

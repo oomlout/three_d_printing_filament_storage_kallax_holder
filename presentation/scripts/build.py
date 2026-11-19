@@ -11,6 +11,8 @@ from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont
 import fitz
 ROOT=Path(__file__).resolve().parents[2]
+if (ROOT/'working_oomp_populate.py').exists():
+    raise SystemExit('This presentation layout is superseded. Run python working.py from the project root.')
 P=ROOT/'presentation'
 sys.path.insert(0,str(Path(__file__).parent/'lib'))
 from manual_layout import Manual,INK,GREY,ACCENT
