@@ -10,7 +10,7 @@ ROOT=Path(__file__).resolve().parents[2]
 OUT=Path(sys.argv[sys.argv.index('--')+1])/'render'
 CONFIG=json.loads((ROOT/'source_file/reviewed_inventory.json').read_text(encoding='utf-8'))
 GEOMETRY=CONFIG['geometry']
-assert GEOMETRY['span_mm']==335.01 and GEOMETRY['clip_mm']==7 and GEOMETRY['nut_cover_mm']==7, 'Update renderer transforms when changing the axial stack'
+assert GEOMETRY['span_mm']==335.01 and GEOMETRY['clip_mm']==11 and GEOMETRY['nut_cover_mm']==11, 'Update renderer transforms when changing the axial stack'
 assert GEOMETRY['bolt_mm']==25 and GEOMETRY['coupler_mm']==18 and GEOMETRY['rod_mm']==300
 for folder in ('raw','scenes','qa'):(OUT/folder).mkdir(parents=True,exist_ok=True)
 SHOT=sys.argv[sys.argv.index('--')+1] if '--' in sys.argv else 'parts'
@@ -211,9 +211,9 @@ def rail(cx,y,z,explode=0,expose=False):
         spacer(67.67,(a+117.67,y,z),'one_end_nut',name='B | 67.67 mm sleeve')
         spacer(99.67,(a+294.01+explode*2,y,z),'one_end_nut',True,name='A | 99.67 mm sleeve')
         spacer(18,(a+294.01+explode*3,y,z),'full_nut',name='C | 18 mm coupling housing')
-        clip=spacer(7,(a+312.01+explode*4,y,z),'slotted',name='D | 7 mm slip-on cover')
+        clip=spacer(11,(a+312.01+explode*4,y,z),'slotted_overlap',name='D | 11 mm slip-on cover')
         clip.rotation_euler=Matrix(((0,0,1),(-1,0,0),(0,-1,0))).to_euler()  # slot down
-        spacer(7,(a+319.01+explode*5,y,z),'full_nut',name='E | 7 mm retaining nut cover')
+        spacer(11,(a+315.01+explode*5,y,z),'full_nut',name='E | 11 mm retaining nut cover')
     coupling(a+2.5-explode*4,y,z,5)
     coupling(a+303.01+explode*3,y,z)
     coupling(a+323.51+explode*5,y,z,5,name='M6 adjustment bolt retaining nut')

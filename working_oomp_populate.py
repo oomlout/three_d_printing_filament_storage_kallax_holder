@@ -1,7 +1,55 @@
 """Editable KALLAX documentation recipe. All dimensions are millimetres."""
 import copy
+from pathlib import Path
+import yaml
 
-CONFIGURATION_ID = "project_github_oomlout_three_d_printing_filament_storage_kallax_one_cell"
+PROJECT = "three_d_printing_filament_storage_kallax"
+ROOT = Path(__file__).resolve().parent
+
+CONFIGURATION_ID = "project_github_oomlout_three_d_printing_filament_storage_kallax_one_cell_kit"
+
+def get_options():
+    """Catalogue the kit and the seven print definitions it consumes."""
+    configuration = define()
+    models = {
+        "P1": ("side", 10, 3, 9, "short"),
+        "P2": ("side", 10, 8, 9, "short"),
+        "P3": ("spacer", 1, 1, 99.67, "one_end_nut"),
+        "P4": ("spacer", 1, 1, 67.67, "one_end_nut"),
+        "P5": ("spacer", 1, 1, 18, "full_nut"),
+        "P6": ("spacer", 1, 1, 11, "full_nut"),
+        "P7": ("spacer", 1, 1, 11, "slotted_overlap"),
+    }
+    taxonomy = dict(classification="project", type="github", size="oomlout",
+                    color=PROJECT, manufacturer="", part_number="")
+    records = []
+    for key, (name, width, height, thickness, extra) in models.items():
+        params = dict(width=width, height=height, thickness=thickness, extra=extra)
+        if extra == "slotted_overlap":
+            params["overlap"] = 8
+        desc = f"{name}_{width}_width_{height}_height_{thickness}_mm_depth".replace(".", "_")
+        identifier = f"project_github_oomlout_{PROJECT}_{desc}_{extra}_extra"
+        if identifier != configuration["parts"][key]["id"]:
+            raise ValueError(f"CAD dimensions disagree with the catalogue ID for {key}")
+        params.update(type=f"{PROJECT}_{name}", modes=["3dpr"])
+        records.append(dict(taxonomy, id=identifier, name=name, description_main=desc,
+                            description_extra=extra+"_extra", kwargs=params,
+                            project_name=PROJECT, id_oobb=f"oobb_part_{PROJECT}_{desc}_{extra}_extra",
+                            full_shift=[0, 0, 0], full_rotations=[0, 0, 0]))
+    records.append(dict(taxonomy, id=configuration["id"], name="one_cell_kit",
+                        description_main="one_cell_kit", description_extra="",
+                        oobb_details=configuration))
+    return records
+
+
+def main():
+    records = get_options()
+    for record in records:
+        folder = ROOT / "parts_source" / record["id"]
+        folder.mkdir(parents=True, exist_ok=True)
+        (folder / "working.yaml").write_text(yaml.safe_dump(record, sort_keys=False), encoding="utf-8")
+    return records
+
 
 def define_project_readme(**kwargs):
     kwargs = copy.deepcopy(kwargs)
@@ -30,7 +78,7 @@ def define_assembly_book(**kwargs):
     kwargs.setdefault("details", [
         "One cell: independent short front holder and tall rear holder. Four frames and two rails per holder.",
         "Nominal opening: 335 mm. Rail heights: 37 mm front, 112 mm rear. Row centres: 187 mm.",
-        "Print all plastic parts in black. Use the 7 mm nut covers and 7 mm slotted covers.",
+        "Print all plastic parts in black. Use the 11 mm nut covers and 11 mm slotted covers.",
         "Cut four M6 threaded rods to 300 mm and deburr the ends. Prepare a 10 mm spanner.",
         "Each rail: one 18 mm M6 coupling nut, one M6 x 25 fully threaded hex bolt and two M6 nuts.",
         "Seat the fixed nut and bolt head in the outer frame recesses. Retain the bolt with an inner nut.",
@@ -79,13 +127,13 @@ def define_assembly_cards(**kwargs):
             },
             {
                 "title": "Fit the adjusting end",
-                "action": "Face the final frame's recesses outward. Insert the M6 x 25 hex bolts, add retaining nuts loosely and slide the 7 mm hex covers over them. Thread the bolt tips into the couplings.",
+                "action": "Face the final frame's recesses outward. Insert the M6 x 25 hex bolts, add retaining nuts loosely and slide the 11 mm hex covers over them. Thread the bolt tips into the couplings.",
                 "add": ["frame_4", "bolt_*", "retaining_*", "nut_cover_*"],
                 "move": {"nut_cover_*": [20, 0, 0], "retaining_*": [35, 0, 0], "frame_4": [50, 0, 0], "bolt_*": [70, 0, 0]},
             },
             {
                 "title": "Adjust and close the rails",
-                "action": "Set the width to the measured opening, nominally 335 mm. Seat the bolt heads in the outer recesses. Slide the hex covers aside, tighten the retaining nuts against the inner frame face, then replace the covers. Clip the 7 mm slotted covers over the exposed thread, slots downward.",
+                "action": "Set the width to the measured opening, nominally 335 mm. Seat the bolt heads in the outer recesses. Slide the hex covers aside, tighten the retaining nuts against the inner frame face, then replace the covers. Clip the 11 mm slotted covers over the exposed thread, slots downward. Seat the wider end 8 mm over the retaining cover.",
                 "add": ["clip_*"],
                 "move": {"clip_*": [0, 0, 22]},
             },
@@ -173,16 +221,16 @@ PARTS = {'P1': {'name': 'Short side frame',
         'stl': 'parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_18_mm_depth_full_nut_extra/3dpr.stl',
         'printed': True,
         'quantity': 4},
- 'P6': {'name': 'Nut cover 7 mm',
-        'detail': '7 mm long; full hex bore',
-        'id': 'project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_7_mm_depth_full_nut_extra',
-        'stl': 'parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_7_mm_depth_full_nut_extra/3dpr.stl',
+ 'P6': {'name': 'Nut cover 11 mm',
+        'detail': '11 mm long; full hex bore',
+        'id': 'project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_full_nut_extra',
+        'stl': 'parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_full_nut_extra/3dpr.stl',
         'printed': True,
         'quantity': 4},
- 'P7': {'name': 'Slotted cover 7 mm',
-        'detail': '7 mm long; open slot',
-        'id': 'project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_7_mm_depth_slotted_extra',
-        'stl': 'parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_7_mm_depth_slotted_extra/3dpr.stl',
+ 'P7': {'name': 'Slotted cover 11 mm',
+        'detail': '11 mm long; 8 mm overlap socket',
+        'id': 'project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_slotted_overlap_extra',
+        'stl': 'parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_slotted_overlap_extra/3dpr.stl',
         'printed': True,
         'quantity': 4},
  'H1': {'name': 'M6 x 300 threaded rod',
@@ -219,3 +267,7 @@ PARTS = {'P1': {'name': 'Short side frame',
         'md5_6_alpha': '9dg7e',
         'short_url': 'https://oom.lt/a/9dg7e',
         'url': 'https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_set_screw_m6_25_mm_length'}}
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,28 @@
+classification: project
+type: github
+size: oomlout
+color: three_d_printing_filament_storage_kallax
+manufacturer: ''
+part_number: ''
+id: project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_3_height_9_mm_depth_short_extra
+name: side
+description_main: side_10_width_3_height_9_mm_depth
+description_extra: short_extra
+kwargs:
+  width: 10
+  height: 3
+  thickness: 9
+  extra: short
+  type: three_d_printing_filament_storage_kallax_side
+  modes:
+  - 3dpr
+project_name: three_d_printing_filament_storage_kallax
+id_oobb: oobb_part_three_d_printing_filament_storage_kallax_side_10_width_3_height_9_mm_depth_short_extra
+full_shift:
+- 0
+- 0
+- 0
+full_rotations:
+- 0
+- 0
+- 0

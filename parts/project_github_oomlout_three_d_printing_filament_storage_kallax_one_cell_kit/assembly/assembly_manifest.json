@@ -1,0 +1,1978 @@
+{
+  "style": {
+    "page_mm": [
+      297,
+      210
+    ],
+    "columns": 2,
+    "rows": 2,
+    "margin_mm": 6,
+    "gutter_mm": 4,
+    "border_radius_mm": 3,
+    "border_width_pt": 3.0,
+    "component_border_width_pt": 1.1,
+    "thumbnail_height_mm": 8.5,
+    "quantity_shift_mm": 1.0,
+    "paper": "FFFFFF",
+    "ink": "000000",
+    "accent": "000000",
+    "border": "000000",
+    "image_size": [
+      1500,
+      1100
+    ],
+    "samples": 24,
+    "eye": [
+      1.2,
+      -1.6,
+      1.35
+    ],
+    "underside_eye": [
+      1.2,
+      -1.6,
+      -1.5
+    ],
+    "font_body_pt": 7,
+    "font_code_pt": 6.4,
+    "font_url_prefix_pt": 4.8,
+    "quantity_pt": 5.8,
+    "explosion_scale": 1.35,
+    "draw_arrows": false,
+    "revision": "4",
+    "title": "KALLAX filament holders"
+  },
+  "book": {
+    "cover_title": "KALLAX filament holders",
+    "cover_subtitle": "One cell / short and tall holders / M6 adjustable rails",
+    "project_name": "three_d_printing_filament_storage_kallax_holder",
+    "project_url": "https://github.com/oomlout/three_d_printing_filament_storage_kallax_holder",
+    "viewer_enabled": true,
+    "viewer_start": "page-03",
+    "viewer_layout": "a4-landscape-four-step",
+    "logo_svg": "source_file/oomlout_logo_unshaded_original.svg",
+    "logo_symbol_subpaths": 3,
+    "details_title": "Project details",
+    "details": [
+      "One cell: independent short front holder and tall rear holder. Four frames and two rails per holder.",
+      "Nominal opening: 335 mm. Rail heights: 37 mm front, 112 mm rear. Row centres: 187 mm.",
+      "Print all plastic parts in black. Use the 11 mm nut covers and 11 mm slotted covers.",
+      "Cut four M6 threaded rods to 300 mm and deburr the ends. Prepare a 10 mm spanner.",
+      "Each rail: one 18 mm M6 coupling nut, one M6 x 25 fully threaded hex bolt and two M6 nuts.",
+      "Seat the fixed nut and bolt head in the outer frame recesses. Retain the bolt with an inner nut.",
+      "Nominal coupling engagement: rod 5.99 mm; bolt 7 mm. Bolt length is measured under the head.",
+      "Measure the actual opening before adjustment. Do not force the cabinet sides apart.",
+      "Keep refills strapped. Illustrated front reels are 200 mm diameter x 60 mm wide.",
+      "M6 x 300 threaded rod: OOMP record pending. No shortlink is assigned.",
+      "AI-generated CAD images and instructions. Errors possible. Physical fit and load capacity untested."
+    ],
+    "summary_title": "Printed parts",
+    "hardware_title": "Hardware",
+    "summary_step": true,
+    "summary_view": "book_cover",
+    "signature_pages": 4
+  },
+  "configuration_title": "KALLAX filament holders",
+  "parts": {
+    "P1": {
+      "name": "Short side frame",
+      "detail": "149 x 44 x 9 mm",
+      "id": "project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_3_height_9_mm_depth_short_extra",
+      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_3_height_9_mm_depth_short_extra/3dpr.stl",
+      "printed": true,
+      "quantity": 4,
+      "key": "P1"
+    },
+    "P2": {
+      "name": "Tall side frame",
+      "detail": "149 x 119 x 9 mm",
+      "id": "project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_8_height_9_mm_depth_short_extra",
+      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_8_height_9_mm_depth_short_extra/3dpr.stl",
+      "printed": true,
+      "quantity": 4,
+      "key": "P2"
+    },
+    "P3": {
+      "name": "Sleeve 99.67 mm",
+      "detail": "99.67 mm long; one-end hex pocket",
+      "id": "project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_99_67_mm_depth_one_end_nut_extra",
+      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_99_67_mm_depth_one_end_nut_extra/3dpr.stl",
+      "printed": true,
+      "quantity": 8,
+      "key": "P3"
+    },
+    "P4": {
+      "name": "Sleeve 67.67 mm",
+      "detail": "67.67 mm long; one-end hex pocket",
+      "id": "project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_67_67_mm_depth_one_end_nut_extra",
+      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_67_67_mm_depth_one_end_nut_extra/3dpr.stl",
+      "printed": true,
+      "quantity": 4,
+      "key": "P4"
+    },
+    "P5": {
+      "name": "Coupling housing 18 mm",
+      "detail": "18 mm long; full hex bore",
+      "id": "project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_18_mm_depth_full_nut_extra",
+      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_18_mm_depth_full_nut_extra/3dpr.stl",
+      "printed": true,
+      "quantity": 4,
+      "key": "P5"
+    },
+    "P6": {
+      "name": "Nut cover 11 mm",
+      "detail": "11 mm long; full hex bore",
+      "id": "project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_full_nut_extra",
+      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_full_nut_extra/3dpr.stl",
+      "printed": true,
+      "quantity": 4,
+      "key": "P6"
+    },
+    "P7": {
+      "name": "Slotted cover 11 mm",
+      "detail": "11 mm long; 8 mm overlap socket",
+      "id": "project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_slotted_overlap_extra",
+      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_slotted_overlap_extra/3dpr.stl",
+      "printed": true,
+      "quantity": 4,
+      "key": "P7"
+    },
+    "H1": {
+      "name": "M6 x 300 threaded rod",
+      "detail": "300 mm cut length; M6 x 1.0",
+      "id": "project_local_m6_threaded_rod_300_mm",
+      "quantity": 4,
+      "catalogue_status": "pending",
+      "identity_source": "User requested OOMP record pending on 2026-11-07; no supplier link in README.",
+      "key": "H1"
+    },
+    "H2": {
+      "name": "M6 hex nut",
+      "detail": "10 mm AF; 5 mm nominal thickness",
+      "id": "hardware_nut_m6",
+      "quantity": 8,
+      "catalogue_status": "verified",
+      "identity_source": "OOMP identity verified 2026-11-06; actual thickness to be checked",
+      "md5_6_alpha": "hcps",
+      "short_url": "https://oom.lt/a/hcps",
+      "url": "https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_nut_m6",
+      "key": "H2",
+      "md5": "0c5aa07f0758332d210758db9c5a2270",
+      "short_label": "oom.lt/a/hcps"
+    },
+    "H3": {
+      "name": "M6 coupling nut 18 mm",
+      "detail": "DIN 6334; 18 mm long; 10 mm AF",
+      "id": "hardware_nut_m6_coupling",
+      "quantity": 4,
+      "catalogue_status": "verified",
+      "identity_source": "OOMP identity verified 2026-11-06; 18 mm dimensions from Accu",
+      "md5_6_alpha": "1qsz8",
+      "short_url": "https://oom.lt/a/1qsz8",
+      "url": "https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_nut_m6_coupling",
+      "key": "H3",
+      "md5": "2cb634ff8de12e3092db946892b5149b",
+      "short_label": "oom.lt/a/1qsz8"
+    },
+    "H4": {
+      "name": "M6 x 25 hex bolt",
+      "detail": "25 mm under head; M6 x 1.0; DIN 933",
+      "id": "hardware_set_screw_m6_25_mm_length",
+      "quantity": 4,
+      "catalogue_status": "verified",
+      "identity_source": "OOMP full-thread hex-head identity verified 2026-11-06; no grub screw",
+      "md5_6_alpha": "9dg7e",
+      "short_url": "https://oom.lt/a/9dg7e",
+      "url": "https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_set_screw_m6_25_mm_length",
+      "key": "H4",
+      "md5": "f03c4a00282afdd14f63ea8ef6539a94",
+      "short_label": "oom.lt/a/9dg7e"
+    }
+  },
+  "printed_keys": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6",
+    "P7"
+  ],
+  "steps": [
+    {
+      "title": "Start the short holder",
+      "action": "Seat two M6 nuts in the first short frame's outer recesses. Thread in two 300 mm rods with their ends flush with the nuts.",
+      "add": [
+        "front_frame_1",
+        "front_fixed_*",
+        "front_rod_*"
+      ],
+      "move": {
+        "front_fixed_*": [
+          -18,
+          0,
+          0
+        ],
+        "front_rod_*": [
+          18,
+          0,
+          0
+        ]
+      },
+      "number": 1,
+      "key": "step_01",
+      "added_instances": [
+        "front_frame_1",
+        "front_fixed_0",
+        "front_fixed_1",
+        "front_rod_0",
+        "front_rod_1"
+      ],
+      "shown_instances": [
+        "front_frame_1",
+        "front_rod_0",
+        "front_fixed_0",
+        "front_rod_1",
+        "front_fixed_1"
+      ],
+      "offsets": {
+        "front_fixed_0": [
+          -24.3,
+          0.0,
+          0.0
+        ],
+        "front_fixed_1": [
+          -24.3,
+          0.0,
+          0.0
+        ],
+        "front_rod_0": [
+          24.3,
+          0.0,
+          0.0
+        ],
+        "front_rod_1": [
+          24.3,
+          0.0,
+          0.0
+        ]
+      },
+      "loose_parts": {
+        "P1": 1,
+        "H2": 2,
+        "H1": 2
+      }
+    },
+    {
+      "title": "Fit the first sleeves",
+      "action": "Slide one 99.67 mm sleeve onto each rod, then fit the second frame.",
+      "add": [
+        "front_long_first_*",
+        "front_frame_2"
+      ],
+      "move": {
+        "front_long_first_*": [
+          20,
+          0,
+          0
+        ],
+        "front_frame_2": [
+          40,
+          0,
+          0
+        ]
+      },
+      "number": 2,
+      "key": "step_02",
+      "added_instances": [
+        "front_long_first_0",
+        "front_long_first_1",
+        "front_frame_2"
+      ],
+      "shown_instances": [
+        "front_frame_1",
+        "front_frame_2",
+        "front_rod_0",
+        "front_fixed_0",
+        "front_long_first_0",
+        "front_rod_1",
+        "front_fixed_1",
+        "front_long_first_1"
+      ],
+      "offsets": {
+        "front_long_first_0": [
+          27.0,
+          0.0,
+          0.0
+        ],
+        "front_long_first_1": [
+          27.0,
+          0.0,
+          0.0
+        ],
+        "front_frame_2": [
+          54.0,
+          0.0,
+          0.0
+        ]
+      },
+      "loose_parts": {
+        "P3": 2,
+        "P1": 1
+      }
+    },
+    {
+      "title": "Fit the centre and remaining sleeves",
+      "action": "Fit two 67.67 mm sleeves, the third frame and two 99.67 mm sleeves. Face the last sleeves' hex pockets toward the couplings.",
+      "add": [
+        "front_centre_*",
+        "front_frame_3",
+        "front_long_last_*"
+      ],
+      "move": {
+        "front_centre_*": [
+          20,
+          0,
+          0
+        ],
+        "front_frame_3": [
+          40,
+          0,
+          0
+        ],
+        "front_long_last_*": [
+          60,
+          0,
+          0
+        ]
+      },
+      "number": 3,
+      "key": "step_03",
+      "added_instances": [
+        "front_centre_0",
+        "front_centre_1",
+        "front_frame_3",
+        "front_long_last_0",
+        "front_long_last_1"
+      ],
+      "shown_instances": [
+        "front_frame_1",
+        "front_frame_2",
+        "front_frame_3",
+        "front_rod_0",
+        "front_fixed_0",
+        "front_long_first_0",
+        "front_centre_0",
+        "front_long_last_0",
+        "front_rod_1",
+        "front_fixed_1",
+        "front_long_first_1",
+        "front_centre_1",
+        "front_long_last_1"
+      ],
+      "offsets": {
+        "front_centre_0": [
+          27.0,
+          0.0,
+          0.0
+        ],
+        "front_centre_1": [
+          27.0,
+          0.0,
+          0.0
+        ],
+        "front_frame_3": [
+          54.0,
+          0.0,
+          0.0
+        ],
+        "front_long_last_0": [
+          81.0,
+          0.0,
+          0.0
+        ],
+        "front_long_last_1": [
+          81.0,
+          0.0,
+          0.0
+        ]
+      },
+      "loose_parts": {
+        "P4": 2,
+        "P1": 1,
+        "P3": 2
+      }
+    },
+    {
+      "title": "Fit the couplings",
+      "action": "Insert an M6 coupling nut into each 18 mm housing. Thread each coupling approximately 6 mm onto its rod.",
+      "add": [
+        "front_coupling_*",
+        "front_housing_*"
+      ],
+      "move": {
+        "front_coupling_*": [
+          25,
+          0,
+          0
+        ],
+        "front_housing_*": [
+          50,
+          0,
+          0
+        ]
+      },
+      "number": 4,
+      "key": "step_04",
+      "added_instances": [
+        "front_coupling_0",
+        "front_coupling_1",
+        "front_housing_0",
+        "front_housing_1"
+      ],
+      "shown_instances": [
+        "front_frame_1",
+        "front_frame_2",
+        "front_frame_3",
+        "front_rod_0",
+        "front_fixed_0",
+        "front_long_first_0",
+        "front_centre_0",
+        "front_long_last_0",
+        "front_housing_0",
+        "front_coupling_0",
+        "front_rod_1",
+        "front_fixed_1",
+        "front_long_first_1",
+        "front_centre_1",
+        "front_long_last_1",
+        "front_housing_1",
+        "front_coupling_1"
+      ],
+      "offsets": {
+        "front_coupling_0": [
+          33.75,
+          0.0,
+          0.0
+        ],
+        "front_coupling_1": [
+          33.75,
+          0.0,
+          0.0
+        ],
+        "front_housing_0": [
+          67.5,
+          0.0,
+          0.0
+        ],
+        "front_housing_1": [
+          67.5,
+          0.0,
+          0.0
+        ]
+      },
+      "loose_parts": {
+        "H3": 2,
+        "P5": 2
+      }
+    },
+    {
+      "title": "Fit the adjusting end",
+      "action": "Face the final frame's recesses outward. Insert the M6 x 25 hex bolts, add retaining nuts loosely and slide the 11 mm hex covers over them. Thread the bolt tips into the couplings.",
+      "add": [
+        "front_frame_4",
+        "front_bolt_*",
+        "front_retaining_*",
+        "front_nut_cover_*"
+      ],
+      "move": {
+        "front_nut_cover_*": [
+          20,
+          0,
+          0
+        ],
+        "front_retaining_*": [
+          35,
+          0,
+          0
+        ],
+        "front_frame_4": [
+          50,
+          0,
+          0
+        ],
+        "front_bolt_*": [
+          70,
+          0,
+          0
+        ]
+      },
+      "number": 5,
+      "key": "step_05",
+      "added_instances": [
+        "front_frame_4",
+        "front_bolt_0",
+        "front_bolt_1",
+        "front_retaining_0",
+        "front_retaining_1",
+        "front_nut_cover_0",
+        "front_nut_cover_1"
+      ],
+      "shown_instances": [
+        "front_frame_1",
+        "front_frame_2",
+        "front_frame_3",
+        "front_frame_4",
+        "front_rod_0",
+        "front_fixed_0",
+        "front_long_first_0",
+        "front_centre_0",
+        "front_long_last_0",
+        "front_housing_0",
+        "front_coupling_0",
+        "front_nut_cover_0",
+        "front_retaining_0",
+        "front_bolt_0",
+        "front_rod_1",
+        "front_fixed_1",
+        "front_long_first_1",
+        "front_centre_1",
+        "front_long_last_1",
+        "front_housing_1",
+        "front_coupling_1",
+        "front_nut_cover_1",
+        "front_retaining_1",
+        "front_bolt_1"
+      ],
+      "offsets": {
+        "front_nut_cover_0": [
+          27.0,
+          0.0,
+          0.0
+        ],
+        "front_nut_cover_1": [
+          27.0,
+          0.0,
+          0.0
+        ],
+        "front_retaining_0": [
+          47.25,
+          0.0,
+          0.0
+        ],
+        "front_retaining_1": [
+          47.25,
+          0.0,
+          0.0
+        ],
+        "front_frame_4": [
+          67.5,
+          0.0,
+          0.0
+        ],
+        "front_bolt_0": [
+          94.5,
+          0.0,
+          0.0
+        ],
+        "front_bolt_1": [
+          94.5,
+          0.0,
+          0.0
+        ]
+      },
+      "loose_parts": {
+        "P1": 1,
+        "H4": 2,
+        "H2": 2,
+        "P6": 2
+      }
+    },
+    {
+      "title": "Adjust and close the rails",
+      "action": "Set the width to the measured opening, nominally 335 mm. Seat the bolt heads in the outer recesses. Slide the hex covers aside, tighten the retaining nuts against the inner frame face, then replace the covers. Clip the 11 mm slotted covers over the exposed thread, slots downward. Seat the wider end 8 mm over the retaining cover.",
+      "add": [
+        "front_clip_*"
+      ],
+      "move": {
+        "front_clip_*": [
+          0,
+          0,
+          22
+        ]
+      },
+      "number": 6,
+      "key": "step_06",
+      "added_instances": [
+        "front_clip_0",
+        "front_clip_1"
+      ],
+      "shown_instances": [
+        "front_frame_1",
+        "front_frame_2",
+        "front_frame_3",
+        "front_frame_4",
+        "front_rod_0",
+        "front_fixed_0",
+        "front_long_first_0",
+        "front_centre_0",
+        "front_long_last_0",
+        "front_housing_0",
+        "front_coupling_0",
+        "front_clip_0",
+        "front_nut_cover_0",
+        "front_retaining_0",
+        "front_bolt_0",
+        "front_rod_1",
+        "front_fixed_1",
+        "front_long_first_1",
+        "front_centre_1",
+        "front_long_last_1",
+        "front_housing_1",
+        "front_coupling_1",
+        "front_clip_1",
+        "front_nut_cover_1",
+        "front_retaining_1",
+        "front_bolt_1"
+      ],
+      "offsets": {
+        "front_clip_0": [
+          0.0,
+          0.0,
+          29.700000000000003
+        ],
+        "front_clip_1": [
+          0.0,
+          0.0,
+          29.700000000000003
+        ]
+      },
+      "loose_parts": {
+        "P7": 2
+      }
+    },
+    {
+      "title": "Start the tall holder",
+      "action": "Seat two M6 nuts in the first tall frame's outer recesses. Thread in two 300 mm rods with their ends flush with the nuts.",
+      "add": [
+        "rear_frame_1",
+        "rear_fixed_*",
+        "rear_rod_*"
+      ],
+      "move": {
+        "rear_fixed_*": [
+          -18,
+          0,
+          0
+        ],
+        "rear_rod_*": [
+          18,
+          0,
+          0
+        ]
+      },
+      "number": 7,
+      "key": "step_07",
+      "added_instances": [
+        "rear_frame_1",
+        "rear_fixed_0",
+        "rear_fixed_1",
+        "rear_rod_0",
+        "rear_rod_1"
+      ],
+      "shown_instances": [
+        "front_frame_1",
+        "front_frame_2",
+        "front_frame_3",
+        "front_frame_4",
+        "front_rod_0",
+        "front_fixed_0",
+        "front_long_first_0",
+        "front_centre_0",
+        "front_long_last_0",
+        "front_housing_0",
+        "front_coupling_0",
+        "front_clip_0",
+        "front_nut_cover_0",
+        "front_retaining_0",
+        "front_bolt_0",
+        "front_rod_1",
+        "front_fixed_1",
+        "front_long_first_1",
+        "front_centre_1",
+        "front_long_last_1",
+        "front_housing_1",
+        "front_coupling_1",
+        "front_clip_1",
+        "front_nut_cover_1",
+        "front_retaining_1",
+        "front_bolt_1",
+        "rear_frame_1",
+        "rear_rod_0",
+        "rear_fixed_0",
+        "rear_rod_1",
+        "rear_fixed_1"
+      ],
+      "offsets": {
+        "rear_fixed_0": [
+          -24.3,
+          0.0,
+          0.0
+        ],
+        "rear_fixed_1": [
+          -24.3,
+          0.0,
+          0.0
+        ],
+        "rear_rod_0": [
+          24.3,
+          0.0,
+          0.0
+        ],
+        "rear_rod_1": [
+          24.3,
+          0.0,
+          0.0
+        ]
+      },
+      "loose_parts": {
+        "P2": 1,
+        "H2": 2,
+        "H1": 2
+      }
+    },
+    {
+      "title": "Fit the first sleeves",
+      "action": "Slide one 99.67 mm sleeve onto each rod, then fit the second frame.",
+      "add": [
+        "rear_long_first_*",
+        "rear_frame_2"
+      ],
+      "move": {
+        "rear_long_first_*": [
+          20,
+          0,
+          0
+        ],
+        "rear_frame_2": [
+          40,
+          0,
+          0
+        ]
+      },
+      "number": 8,
+      "key": "step_08",
+      "added_instances": [
+        "rear_long_first_0",
+        "rear_long_first_1",
+        "rear_frame_2"
+      ],
+      "shown_instances": [
+        "front_frame_1",
+        "front_frame_2",
+        "front_frame_3",
+        "front_frame_4",
+        "front_rod_0",
+        "front_fixed_0",
+        "front_long_first_0",
+        "front_centre_0",
+        "front_long_last_0",
+        "front_housing_0",
+        "front_coupling_0",
+        "front_clip_0",
+        "front_nut_cover_0",
+        "front_retaining_0",
+        "front_bolt_0",
+        "front_rod_1",
+        "front_fixed_1",
+        "front_long_first_1",
+        "front_centre_1",
+        "front_long_last_1",
+        "front_housing_1",
+        "front_coupling_1",
+        "front_clip_1",
+        "front_nut_cover_1",
+        "front_retaining_1",
+        "front_bolt_1",
+        "rear_frame_1",
+        "rear_frame_2",
+        "rear_rod_0",
+        "rear_fixed_0",
+        "rear_long_first_0",
+        "rear_rod_1",
+        "rear_fixed_1",
+        "rear_long_first_1"
+      ],
+      "offsets": {
+        "rear_long_first_0": [
+          27.0,
+          0.0,
+          0.0
+        ],
+        "rear_long_first_1": [
+          27.0,
+          0.0,
+          0.0
+        ],
+        "rear_frame_2": [
+          54.0,
+          0.0,
+          0.0
+        ]
+      },
+      "loose_parts": {
+        "P3": 2,
+        "P2": 1
+      }
+    },
+    {
+      "title": "Fit the centre and remaining sleeves",
+      "action": "Fit two 67.67 mm sleeves, the third frame and two 99.67 mm sleeves. Face the last sleeves' hex pockets toward the couplings.",
+      "add": [
+        "rear_centre_*",
+        "rear_frame_3",
+        "rear_long_last_*"
+      ],
+      "move": {
+        "rear_centre_*": [
+          20,
+          0,
+          0
+        ],
+        "rear_frame_3": [
+          40,
+          0,
+          0
+        ],
+        "rear_long_last_*": [
+          60,
+          0,
+          0
+        ]
+      },
+      "number": 9,
+      "key": "step_09",
+      "added_instances": [
+        "rear_centre_0",
+        "rear_centre_1",
+        "rear_frame_3",
+        "rear_long_last_0",
+        "rear_long_last_1"
+      ],
+      "shown_instances": [
+        "front_frame_1",
+        "front_frame_2",
+        "front_frame_3",
+        "front_frame_4",
+        "front_rod_0",
+        "front_fixed_0",
+        "front_long_first_0",
+        "front_centre_0",
+        "front_long_last_0",
+        "front_housing_0",
+        "front_coupling_0",
+        "front_clip_0",
+        "front_nut_cover_0",
+        "front_retaining_0",
+        "front_bolt_0",
+        "front_rod_1",
+        "front_fixed_1",
+        "front_long_first_1",
+        "front_centre_1",
+        "front_long_last_1",
+        "front_housing_1",
+        "front_coupling_1",
+        "front_clip_1",
+        "front_nut_cover_1",
+        "front_retaining_1",
+        "front_bolt_1",
+        "rear_frame_1",
+        "rear_frame_2",
+        "rear_frame_3",
+        "rear_rod_0",
+        "rear_fixed_0",
+        "rear_long_first_0",
+        "rear_centre_0",
+        "rear_long_last_0",
+        "rear_rod_1",
+        "rear_fixed_1",
+        "rear_long_first_1",
+        "rear_centre_1",
+        "rear_long_last_1"
+      ],
+      "offsets": {
+        "rear_centre_0": [
+          27.0,
+          0.0,
+          0.0
+        ],
+        "rear_centre_1": [
+          27.0,
+          0.0,
+          0.0
+        ],
+        "rear_frame_3": [
+          54.0,
+          0.0,
+          0.0
+        ],
+        "rear_long_last_0": [
+          81.0,
+          0.0,
+          0.0
+        ],
+        "rear_long_last_1": [
+          81.0,
+          0.0,
+          0.0
+        ]
+      },
+      "loose_parts": {
+        "P4": 2,
+        "P2": 1,
+        "P3": 2
+      }
+    },
+    {
+      "title": "Fit the couplings",
+      "action": "Insert an M6 coupling nut into each 18 mm housing. Thread each coupling approximately 6 mm onto its rod.",
+      "add": [
+        "rear_coupling_*",
+        "rear_housing_*"
+      ],
+      "move": {
+        "rear_coupling_*": [
+          25,
+          0,
+          0
+        ],
+        "rear_housing_*": [
+          50,
+          0,
+          0
+        ]
+      },
+      "number": 10,
+      "key": "step_10",
+      "added_instances": [
+        "rear_coupling_0",
+        "rear_coupling_1",
+        "rear_housing_0",
+        "rear_housing_1"
+      ],
+      "shown_instances": [
+        "front_frame_1",
+        "front_frame_2",
+        "front_frame_3",
+        "front_frame_4",
+        "front_rod_0",
+        "front_fixed_0",
+        "front_long_first_0",
+        "front_centre_0",
+        "front_long_last_0",
+        "front_housing_0",
+        "front_coupling_0",
+        "front_clip_0",
+        "front_nut_cover_0",
+        "front_retaining_0",
+        "front_bolt_0",
+        "front_rod_1",
+        "front_fixed_1",
+        "front_long_first_1",
+        "front_centre_1",
+        "front_long_last_1",
+        "front_housing_1",
+        "front_coupling_1",
+        "front_clip_1",
+        "front_nut_cover_1",
+        "front_retaining_1",
+        "front_bolt_1",
+        "rear_frame_1",
+        "rear_frame_2",
+        "rear_frame_3",
+        "rear_rod_0",
+        "rear_fixed_0",
+        "rear_long_first_0",
+        "rear_centre_0",
+        "rear_long_last_0",
+        "rear_housing_0",
+        "rear_coupling_0",
+        "rear_rod_1",
+        "rear_fixed_1",
+        "rear_long_first_1",
+        "rear_centre_1",
+        "rear_long_last_1",
+        "rear_housing_1",
+        "rear_coupling_1"
+      ],
+      "offsets": {
+        "rear_coupling_0": [
+          33.75,
+          0.0,
+          0.0
+        ],
+        "rear_coupling_1": [
+          33.75,
+          0.0,
+          0.0
+        ],
+        "rear_housing_0": [
+          67.5,
+          0.0,
+          0.0
+        ],
+        "rear_housing_1": [
+          67.5,
+          0.0,
+          0.0
+        ]
+      },
+      "loose_parts": {
+        "H3": 2,
+        "P5": 2
+      }
+    },
+    {
+      "title": "Fit the adjusting end",
+      "action": "Face the final frame's recesses outward. Insert the M6 x 25 hex bolts, add retaining nuts loosely and slide the 11 mm hex covers over them. Thread the bolt tips into the couplings.",
+      "add": [
+        "rear_frame_4",
+        "rear_bolt_*",
+        "rear_retaining_*",
+        "rear_nut_cover_*"
+      ],
+      "move": {
+        "rear_nut_cover_*": [
+          20,
+          0,
+          0
+        ],
+        "rear_retaining_*": [
+          35,
+          0,
+          0
+        ],
+        "rear_frame_4": [
+          50,
+          0,
+          0
+        ],
+        "rear_bolt_*": [
+          70,
+          0,
+          0
+        ]
+      },
+      "number": 11,
+      "key": "step_11",
+      "added_instances": [
+        "rear_frame_4",
+        "rear_bolt_0",
+        "rear_bolt_1",
+        "rear_retaining_0",
+        "rear_retaining_1",
+        "rear_nut_cover_0",
+        "rear_nut_cover_1"
+      ],
+      "shown_instances": [
+        "front_frame_1",
+        "front_frame_2",
+        "front_frame_3",
+        "front_frame_4",
+        "front_rod_0",
+        "front_fixed_0",
+        "front_long_first_0",
+        "front_centre_0",
+        "front_long_last_0",
+        "front_housing_0",
+        "front_coupling_0",
+        "front_clip_0",
+        "front_nut_cover_0",
+        "front_retaining_0",
+        "front_bolt_0",
+        "front_rod_1",
+        "front_fixed_1",
+        "front_long_first_1",
+        "front_centre_1",
+        "front_long_last_1",
+        "front_housing_1",
+        "front_coupling_1",
+        "front_clip_1",
+        "front_nut_cover_1",
+        "front_retaining_1",
+        "front_bolt_1",
+        "rear_frame_1",
+        "rear_frame_2",
+        "rear_frame_3",
+        "rear_frame_4",
+        "rear_rod_0",
+        "rear_fixed_0",
+        "rear_long_first_0",
+        "rear_centre_0",
+        "rear_long_last_0",
+        "rear_housing_0",
+        "rear_coupling_0",
+        "rear_nut_cover_0",
+        "rear_retaining_0",
+        "rear_bolt_0",
+        "rear_rod_1",
+        "rear_fixed_1",
+        "rear_long_first_1",
+        "rear_centre_1",
+        "rear_long_last_1",
+        "rear_housing_1",
+        "rear_coupling_1",
+        "rear_nut_cover_1",
+        "rear_retaining_1",
+        "rear_bolt_1"
+      ],
+      "offsets": {
+        "rear_nut_cover_0": [
+          27.0,
+          0.0,
+          0.0
+        ],
+        "rear_nut_cover_1": [
+          27.0,
+          0.0,
+          0.0
+        ],
+        "rear_retaining_0": [
+          47.25,
+          0.0,
+          0.0
+        ],
+        "rear_retaining_1": [
+          47.25,
+          0.0,
+          0.0
+        ],
+        "rear_frame_4": [
+          67.5,
+          0.0,
+          0.0
+        ],
+        "rear_bolt_0": [
+          94.5,
+          0.0,
+          0.0
+        ],
+        "rear_bolt_1": [
+          94.5,
+          0.0,
+          0.0
+        ]
+      },
+      "loose_parts": {
+        "P2": 1,
+        "H4": 2,
+        "H2": 2,
+        "P6": 2
+      }
+    },
+    {
+      "title": "Adjust and close the rails",
+      "action": "Set the width to the measured opening, nominally 335 mm. Seat the bolt heads in the outer recesses. Slide the hex covers aside, tighten the retaining nuts against the inner frame face, then replace the covers. Clip the 11 mm slotted covers over the exposed thread, slots downward. Seat the wider end 8 mm over the retaining cover.",
+      "add": [
+        "rear_clip_*"
+      ],
+      "move": {
+        "rear_clip_*": [
+          0,
+          0,
+          22
+        ]
+      },
+      "number": 12,
+      "key": "step_12",
+      "added_instances": [
+        "rear_clip_0",
+        "rear_clip_1"
+      ],
+      "shown_instances": [
+        "front_frame_1",
+        "front_frame_2",
+        "front_frame_3",
+        "front_frame_4",
+        "front_rod_0",
+        "front_fixed_0",
+        "front_long_first_0",
+        "front_centre_0",
+        "front_long_last_0",
+        "front_housing_0",
+        "front_coupling_0",
+        "front_clip_0",
+        "front_nut_cover_0",
+        "front_retaining_0",
+        "front_bolt_0",
+        "front_rod_1",
+        "front_fixed_1",
+        "front_long_first_1",
+        "front_centre_1",
+        "front_long_last_1",
+        "front_housing_1",
+        "front_coupling_1",
+        "front_clip_1",
+        "front_nut_cover_1",
+        "front_retaining_1",
+        "front_bolt_1",
+        "rear_frame_1",
+        "rear_frame_2",
+        "rear_frame_3",
+        "rear_frame_4",
+        "rear_rod_0",
+        "rear_fixed_0",
+        "rear_long_first_0",
+        "rear_centre_0",
+        "rear_long_last_0",
+        "rear_housing_0",
+        "rear_coupling_0",
+        "rear_clip_0",
+        "rear_nut_cover_0",
+        "rear_retaining_0",
+        "rear_bolt_0",
+        "rear_rod_1",
+        "rear_fixed_1",
+        "rear_long_first_1",
+        "rear_centre_1",
+        "rear_long_last_1",
+        "rear_housing_1",
+        "rear_coupling_1",
+        "rear_clip_1",
+        "rear_nut_cover_1",
+        "rear_retaining_1",
+        "rear_bolt_1"
+      ],
+      "offsets": {
+        "rear_clip_0": [
+          0.0,
+          0.0,
+          29.700000000000003
+        ],
+        "rear_clip_1": [
+          0.0,
+          0.0,
+          29.700000000000003
+        ]
+      },
+      "loose_parts": {
+        "P7": 2
+      }
+    }
+  ],
+  "instances": [
+    {
+      "name": "front_frame_1",
+      "part": "P1",
+      "pos": [
+        -167.505,
+        0,
+        22
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_frame_2",
+      "part": "P1",
+      "pos": [
+        -58.834999999999994,
+        0,
+        22
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_frame_3",
+      "part": "P1",
+      "pos": [
+        17.835000000000008,
+        0,
+        22
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_frame_4",
+      "part": "P1",
+      "pos": [
+        167.505,
+        0,
+        22
+      ],
+      "reverse": true
+    },
+    {
+      "name": "front_rod_0",
+      "part": "H1",
+      "pos": [
+        -17.504999999999995,
+        -67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_fixed_0",
+      "part": "H2",
+      "pos": [
+        -165.005,
+        -67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_long_first_0",
+      "part": "P3",
+      "pos": [
+        -158.505,
+        -67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_centre_0",
+      "part": "P4",
+      "pos": [
+        -49.834999999999994,
+        -67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_long_last_0",
+      "part": "P3",
+      "pos": [
+        126.505,
+        -67.5,
+        37
+      ],
+      "reverse": true
+    },
+    {
+      "name": "front_housing_0",
+      "part": "P5",
+      "pos": [
+        126.505,
+        -67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_coupling_0",
+      "part": "H3",
+      "pos": [
+        135.505,
+        -67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_clip_0",
+      "part": "P7",
+      "pos": [
+        144.505,
+        -67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_nut_cover_0",
+      "part": "P6",
+      "pos": [
+        147.505,
+        -67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_retaining_0",
+      "part": "H2",
+      "pos": [
+        156.005,
+        -67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_bolt_0",
+      "part": "H4",
+      "pos": [
+        162.505,
+        -67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_rod_1",
+      "part": "H1",
+      "pos": [
+        -17.504999999999995,
+        67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_fixed_1",
+      "part": "H2",
+      "pos": [
+        -165.005,
+        67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_long_first_1",
+      "part": "P3",
+      "pos": [
+        -158.505,
+        67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_centre_1",
+      "part": "P4",
+      "pos": [
+        -49.834999999999994,
+        67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_long_last_1",
+      "part": "P3",
+      "pos": [
+        126.505,
+        67.5,
+        37
+      ],
+      "reverse": true
+    },
+    {
+      "name": "front_housing_1",
+      "part": "P5",
+      "pos": [
+        126.505,
+        67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_coupling_1",
+      "part": "H3",
+      "pos": [
+        135.505,
+        67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_clip_1",
+      "part": "P7",
+      "pos": [
+        144.505,
+        67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_nut_cover_1",
+      "part": "P6",
+      "pos": [
+        147.505,
+        67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_retaining_1",
+      "part": "H2",
+      "pos": [
+        156.005,
+        67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_bolt_1",
+      "part": "H4",
+      "pos": [
+        162.505,
+        67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_frame_1",
+      "part": "P2",
+      "pos": [
+        -167.505,
+        187,
+        59.5
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_frame_2",
+      "part": "P2",
+      "pos": [
+        -58.834999999999994,
+        187,
+        59.5
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_frame_3",
+      "part": "P2",
+      "pos": [
+        17.835000000000008,
+        187,
+        59.5
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_frame_4",
+      "part": "P2",
+      "pos": [
+        167.505,
+        187,
+        59.5
+      ],
+      "reverse": true
+    },
+    {
+      "name": "rear_rod_0",
+      "part": "H1",
+      "pos": [
+        -17.504999999999995,
+        119.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_fixed_0",
+      "part": "H2",
+      "pos": [
+        -165.005,
+        119.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_long_first_0",
+      "part": "P3",
+      "pos": [
+        -158.505,
+        119.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_centre_0",
+      "part": "P4",
+      "pos": [
+        -49.834999999999994,
+        119.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_long_last_0",
+      "part": "P3",
+      "pos": [
+        126.505,
+        119.5,
+        112
+      ],
+      "reverse": true
+    },
+    {
+      "name": "rear_housing_0",
+      "part": "P5",
+      "pos": [
+        126.505,
+        119.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_coupling_0",
+      "part": "H3",
+      "pos": [
+        135.505,
+        119.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_clip_0",
+      "part": "P7",
+      "pos": [
+        144.505,
+        119.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_nut_cover_0",
+      "part": "P6",
+      "pos": [
+        147.505,
+        119.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_retaining_0",
+      "part": "H2",
+      "pos": [
+        156.005,
+        119.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_bolt_0",
+      "part": "H4",
+      "pos": [
+        162.505,
+        119.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_rod_1",
+      "part": "H1",
+      "pos": [
+        -17.504999999999995,
+        254.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_fixed_1",
+      "part": "H2",
+      "pos": [
+        -165.005,
+        254.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_long_first_1",
+      "part": "P3",
+      "pos": [
+        -158.505,
+        254.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_centre_1",
+      "part": "P4",
+      "pos": [
+        -49.834999999999994,
+        254.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_long_last_1",
+      "part": "P3",
+      "pos": [
+        126.505,
+        254.5,
+        112
+      ],
+      "reverse": true
+    },
+    {
+      "name": "rear_housing_1",
+      "part": "P5",
+      "pos": [
+        126.505,
+        254.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_coupling_1",
+      "part": "H3",
+      "pos": [
+        135.505,
+        254.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_clip_1",
+      "part": "P7",
+      "pos": [
+        144.505,
+        254.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_nut_cover_1",
+      "part": "P6",
+      "pos": [
+        147.505,
+        254.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_retaining_1",
+      "part": "H2",
+      "pos": [
+        156.005,
+        254.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_bolt_1",
+      "part": "H4",
+      "pos": [
+        162.505,
+        254.5,
+        112
+      ],
+      "reverse": false
+    }
+  ],
+  "physical_item_count": 52,
+  "source_sha256": {
+    "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_3_height_9_mm_depth_short_extra/3dpr.stl": "22f0743f183a6f66658544e4ebb6846262f7bdf2233a0034b959ccd804e1431f",
+    "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_8_height_9_mm_depth_short_extra/3dpr.stl": "7e5db842ab71d3b51fab732619bfde52d47541393ec15679278a19f57b1e3729",
+    "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_99_67_mm_depth_one_end_nut_extra/3dpr.stl": "2bd9749d837919d0f5c05be298d97adc1de81723f65f890a1ab57f90d1c71d20",
+    "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_67_67_mm_depth_one_end_nut_extra/3dpr.stl": "e72a507a2932455a36880070ff46bbc6728d07b5b7916dad9a132eaeed6d973c",
+    "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_18_mm_depth_full_nut_extra/3dpr.stl": "c9f8c22e5bb58cf5580f4e9d4e9ab340afd438604cd3a11633d5f05191f8b325",
+    "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_full_nut_extra/3dpr.stl": "c263aca3585a111de2cea5ec9a783332fee95e439eee0ec6a1d7813a963b7dc7",
+    "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_slotted_overlap_extra/3dpr.stl": "f9d14b21b26c1dda0048ff99098eefa846c70f6f05d73cfa63ab833db07e1b26"
+  },
+  "readme": {
+    "title": "KALLAX filament holders",
+    "summary": "3D-printable holders for storing 3D printer filament in an IKEA KALLAX shelving unit. One cell holds five reels at the front and five strapped filament refills without spools on a raised rear row. This repository includes printable files, editable source and illustrated assembly instructions.",
+    "ai_notice": "This is an entirely AI-generated coding project. The source code is largely unreadable by humans, but usable generated files are included. It is published so others can use their own AI tools to understand, modify and regenerate the design.",
+    "credit": null,
+    "viewer_url": null,
+    "version_title": "One cell",
+    "version_description": "Four short and four tall frames; four adjustable M6 rails. Five front reels and five rear refills.",
+    "installation": "Place the tall holder at the rear and the short holder at the front. Seat all feet on the shelf. Load the strapped rear refills, then the five front reels."
+  },
+  "render_signature": "77465335bf9c40ed1c08666e7b91fb207c3ff41886fd11e75c69421e2eb8284e",
+  "generator_sha256": {
+    "action_make_all.py": "92251adab773a1c180829964430df123a5019eb9f4f2e29fa6c908fc1283ea46",
+    "working.py": "7f7d5950abffd335f7a87b2266069a623b18fb8a4f39263e3509bb527dd4e2df",
+    "working_oomp_populate.py": "aba12b31715d5b8b9d0d21a46f6d6e07b15c84868d84a96ace65f73f7ac6e60a",
+    "working_oomp.py": "8efd7a12d675cf521d72da02bfccb44203f5f51fc3b497e44fa818cbdb0c8ecf",
+    "working_scad.py": "545ea5b772508d09aaad1decd39ecac27b2397a0c778360b0a2b96afef783922",
+    "source_file\\oomlout_logo_unshaded_original.svg": "72918ba326599a1e6ae495ae4cabb51cc7a462035d35ee30de984229e30d9d67",
+    "components\\kallax\\assembly_booklet.py": "8668e3b100d27ac0115769dc7a7744ee0cff2745970a42ef964573c27febec15",
+    "components\\kallax\\assembly_cards.py": "1258eadb7f2d399e6362985ab8328889cf73a30f205c73f34729e6a8848b8714",
+    "components\\kallax\\assembly_viewer.py": "94aacc295569b17aaef9f20f4a135f52db35bfe69521e4bca4f0eb0c01593060",
+    "components\\kallax\\build.py": "f43b6e52932b3c58fe7509328b7570d7f1b99355d7fa4d6c16d0049c32a25023",
+    "components\\kallax\\cad.py": "0848134e773969d25ecac80a1528eda4abeb495cfbbb42d60b101481efef6335",
+    "components\\kallax\\documentation.py": "7a62a810a8a78d4779fddbcbb3729892436fae8168230e433b70b2cda3db19dd",
+    "components\\kallax\\instances.py": "af66fc4e546b38d66a757da6fdb8c267fcca5d7024335fbf7c8ae7abafec8642",
+    "components\\kallax\\kit_geometry.py": "65d0f339e9e4eb3b581800f82e8221905615424cb52fee8cef64470582ebc6c4",
+    "components\\kallax\\print_project.py": "4de39a34d75ef412f33f7e145ebefc8d26afb53d61173d134f5401fa5057a402",
+    "components\\kallax\\render_studio.py": "41f2ab9ce142db4d638c983a6ed00280f12968e2e8cb5f96090410638bd6952c",
+    "components\\kallax\\validate.py": "311a3c4b07cadafd88aa34765ed3f9e6f2d07888195f48efa15fe3368a78ef17",
+    "components\\kallax\\__init__.py": "f7de25bf8e091b2baabeacc0a2b09e50554fae5eb1bbd55c713558a93e8498d4",
+    "components\\kallax\\assembly_viewer.html": "8bcd2ef338b898f47c3c4debb86c5c4bf41bd9493f38cbfe0507db18ffeeab67"
+  },
+  "identity_notes": "Hardware codes use existing OOMP identities. Redirects are not registered by this build. M6 x 300 rod remains pending by user instruction. Printed parts have no codes.",
+  "summary_inventory": {
+    "printed": [
+      {
+        "name": "Short side frame",
+        "detail": "149 x 44 x 9 mm",
+        "id": "project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_3_height_9_mm_depth_short_extra",
+        "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_3_height_9_mm_depth_short_extra/3dpr.stl",
+        "printed": true,
+        "quantity": 4,
+        "key": "P1"
+      },
+      {
+        "name": "Tall side frame",
+        "detail": "149 x 119 x 9 mm",
+        "id": "project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_8_height_9_mm_depth_short_extra",
+        "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_8_height_9_mm_depth_short_extra/3dpr.stl",
+        "printed": true,
+        "quantity": 4,
+        "key": "P2"
+      },
+      {
+        "name": "Sleeve 99.67 mm",
+        "detail": "99.67 mm long; one-end hex pocket",
+        "id": "project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_99_67_mm_depth_one_end_nut_extra",
+        "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_99_67_mm_depth_one_end_nut_extra/3dpr.stl",
+        "printed": true,
+        "quantity": 8,
+        "key": "P3"
+      },
+      {
+        "name": "Sleeve 67.67 mm",
+        "detail": "67.67 mm long; one-end hex pocket",
+        "id": "project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_67_67_mm_depth_one_end_nut_extra",
+        "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_67_67_mm_depth_one_end_nut_extra/3dpr.stl",
+        "printed": true,
+        "quantity": 4,
+        "key": "P4"
+      },
+      {
+        "name": "Coupling housing 18 mm",
+        "detail": "18 mm long; full hex bore",
+        "id": "project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_18_mm_depth_full_nut_extra",
+        "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_18_mm_depth_full_nut_extra/3dpr.stl",
+        "printed": true,
+        "quantity": 4,
+        "key": "P5"
+      },
+      {
+        "name": "Nut cover 11 mm",
+        "detail": "11 mm long; full hex bore",
+        "id": "project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_full_nut_extra",
+        "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_full_nut_extra/3dpr.stl",
+        "printed": true,
+        "quantity": 4,
+        "key": "P6"
+      },
+      {
+        "name": "Slotted cover 11 mm",
+        "detail": "11 mm long; 8 mm overlap socket",
+        "id": "project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_slotted_overlap_extra",
+        "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_slotted_overlap_extra/3dpr.stl",
+        "printed": true,
+        "quantity": 4,
+        "key": "P7"
+      }
+    ],
+    "hardware": [
+      {
+        "name": "M6 x 300 threaded rod",
+        "detail": "300 mm cut length; M6 x 1.0",
+        "id": "project_local_m6_threaded_rod_300_mm",
+        "quantity": 4,
+        "catalogue_status": "pending",
+        "identity_source": "User requested OOMP record pending on 2026-11-07; no supplier link in README.",
+        "key": "H1"
+      },
+      {
+        "name": "M6 hex nut",
+        "detail": "10 mm AF; 5 mm nominal thickness",
+        "id": "hardware_nut_m6",
+        "quantity": 8,
+        "catalogue_status": "verified",
+        "identity_source": "OOMP identity verified 2026-11-06; actual thickness to be checked",
+        "md5_6_alpha": "hcps",
+        "short_url": "https://oom.lt/a/hcps",
+        "url": "https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_nut_m6",
+        "key": "H2",
+        "md5": "0c5aa07f0758332d210758db9c5a2270",
+        "short_label": "oom.lt/a/hcps"
+      },
+      {
+        "name": "M6 coupling nut 18 mm",
+        "detail": "DIN 6334; 18 mm long; 10 mm AF",
+        "id": "hardware_nut_m6_coupling",
+        "quantity": 4,
+        "catalogue_status": "verified",
+        "identity_source": "OOMP identity verified 2026-11-06; 18 mm dimensions from Accu",
+        "md5_6_alpha": "1qsz8",
+        "short_url": "https://oom.lt/a/1qsz8",
+        "url": "https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_nut_m6_coupling",
+        "key": "H3",
+        "md5": "2cb634ff8de12e3092db946892b5149b",
+        "short_label": "oom.lt/a/1qsz8"
+      },
+      {
+        "name": "M6 x 25 hex bolt",
+        "detail": "25 mm under head; M6 x 1.0; DIN 933",
+        "id": "hardware_set_screw_m6_25_mm_length",
+        "quantity": 4,
+        "catalogue_status": "verified",
+        "identity_source": "OOMP full-thread hex-head identity verified 2026-11-06; no grub screw",
+        "md5_6_alpha": "9dg7e",
+        "short_url": "https://oom.lt/a/9dg7e",
+        "url": "https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_set_screw_m6_25_mm_length",
+        "key": "H4",
+        "md5": "f03c4a00282afdd14f63ea8ef6539a94",
+        "short_label": "oom.lt/a/9dg7e"
+      }
+    ]
+  },
+  "book_pages": [
+    {
+      "kind": "cover"
+    },
+    {
+      "kind": "details"
+    },
+    {
+      "kind": "instructions",
+      "group": 0
+    },
+    {
+      "kind": "instructions",
+      "group": 1
+    },
+    {
+      "kind": "instructions",
+      "group": 2
+    },
+    {
+      "kind": "summary",
+      "number": 13
+    },
+    {
+      "kind": "parts"
+    },
+    {
+      "kind": "back"
+    }
+  ],
+  "printed_piece_count": 32
+}

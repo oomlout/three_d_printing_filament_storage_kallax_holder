@@ -17,7 +17,7 @@ def define_instances(**kwargs):
             add('housing_'+str(j), 'P5', [a+294.01,y,z])
             add('coupling_'+str(j), 'H3', [a+303.01,y,z])
             add('clip_'+str(j), 'P7', [a+312.01,y,z])
-            add('nut_cover_'+str(j), 'P6', [a+319.01,y,z])
+            add('nut_cover_'+str(j), 'P6', [a+315.01,y,z])
             add('retaining_'+str(j), 'H2', [a+323.51,y,z])
             add('bolt_'+str(j), 'H4', [a+330.01,y,z])
     return records

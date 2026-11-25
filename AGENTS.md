@@ -14,10 +14,11 @@ The current documentation recipe is `working_oomp_populate.py`. Follow
 the visual reference. This project's explicit all-black print colour overrides
 the normal teal palette.
 
-Run `python working.py` for the populate -> working_oomp -> working_scad
-documentation build. It uses existing production STLs; it does not regenerate
-or change the mechanical design. `--no-renders` recomposes from hash-validated
-cached diagrams. See `DOCUMENTATION.md` for commands, deliverables and limits.
+Run `python action_make_all.py` to populate the kit and its seven dependencies,
+materialize their catalogue records, export CAD, render documentation and slice
+the P1S project. `python working.py` rebuilds documentation from existing
+catalogue meshes. Add `--no-renders` to reuse hash-validated diagrams.
+See `DOCUMENTATION.md` for dependencies and commands.
 
 Keep active documentation inside the one-cell version's `parts/` directory.
 Use a compact version-index landing README, a full version README, ASSEMBLY.md,
@@ -31,7 +32,7 @@ in populate. Reusable helpers live in `components/kallax/`.
 
 Each cell has four short frames, four tall frames and four 300 mm M6 rods.
 The holders are independent. Preserve recessed fixed nuts and bolt heads,
-one coupling per rail, inner retaining nuts, 7 mm hex covers and 7 mm slotted
+one coupling per rail, inner retaining nuts, 11 mm hex covers and 11 mm slotted
 covers. The rod OOMP record remains pending by user instruction; do not invent
 a catalogue record or shortlink. Printed parts have no alpha codes.
 
@@ -51,3 +52,5 @@ has been published and checked. Do not describe a GitHub HTML blob as a viewer.
 Shared OOMP data, OOBB libraries, system fonts, installed applications and the
 cross-project lock under `C:\gh\oomlout_base\lock` are external dependencies;
 their paths are independent of this project's root.
+
+The combined one_cell_kit folder owns all active assembly instructions, printable STL copies and the P1S project. The coupling housing is 18 mm. The two 11 mm covers overlap by 8 mm. Edit the Python definitions and rebuild. Treat the catalogue records, SCAD files, meshes and print plates as generated outputs.

@@ -22,7 +22,7 @@ def main(**kwargs):
    #ai_stuff
     if True:
         import working_oomp
-        working_oomp.main(**kwargs)
+        working_oomp.load_parts(**kwargs)
         kwargs["mode"] = "all"
         working_helper.run_robo_ai(**kwargs)
 

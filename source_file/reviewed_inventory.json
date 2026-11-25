@@ -57,22 +57,22 @@
     },
     {
       "ref": "P6",
-      "name": "Retaining nut cover",
+      "name": "Nut cover 11 mm",
       "quantity": 4,
-      "spec": "7 mm long; full hex bore",
-      "part": "spacer_1_width_1_height_7_mm_depth_full_nut_extra",
-      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_7_mm_depth_full_nut_extra/3dpr.stl",
+      "spec": "11 mm long; full hex bore",
+      "part": "spacer_1_width_1_height_11_mm_depth_full_nut_extra",
+      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_full_nut_extra/3dpr.stl",
       "verification": "Existing source STL; physical fit untested",
       "md5_6_alpha": null,
       "code_verified": "No md5_6_alpha field in the local catalogue record; direct STL link retained"
     },
     {
       "ref": "P7",
-      "name": "Slotted cover",
+      "name": "Slotted cover 11 mm",
       "quantity": 4,
-      "spec": "7 mm long; open slot",
-      "part": "spacer_1_width_1_height_7_mm_depth_slotted_extra",
-      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_7_mm_depth_slotted_extra/3dpr.stl",
+      "spec": "11 mm long; 8 mm overlap socket",
+      "part": "spacer_1_width_1_height_11_mm_depth_slotted_overlap_extra",
+      "stl": "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_slotted_overlap_extra/3dpr.stl",
       "verification": "Existing source STL; physical fit untested",
       "md5_6_alpha": null,
       "code_verified": "No md5_6_alpha field in the local catalogue record; direct STL link retained"
@@ -134,8 +134,8 @@
     "rod_mm": 300,
     "bolt_mm": 25,
     "coupler_mm": 18,
-    "clip_mm": 7,
-    "nut_cover_mm": 7,
+    "clip_mm": 11,
+    "nut_cover_mm": 11,
     "rod_engagement_mm": 5.99,
     "bolt_engagement_mm": 7,
     "tip_gap_mm": 5.01,
@@ -179,11 +179,11 @@
       [
         "Slotted cover",
         312.01,
-        319.01
+        323.01
       ],
       [
         "Retaining nut cover",
-        319.01,
+        315.01,
         326.01
       ],
       [
@@ -217,6 +217,7 @@
         330.01,
         334.01
       ]
-    }
+    },
+    "cover_overlap_mm": 8
   }
 }

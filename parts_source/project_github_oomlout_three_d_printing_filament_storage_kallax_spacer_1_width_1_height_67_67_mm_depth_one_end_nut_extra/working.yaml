@@ -1,0 +1,28 @@
+classification: project
+type: github
+size: oomlout
+color: three_d_printing_filament_storage_kallax
+manufacturer: ''
+part_number: ''
+id: project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_67_67_mm_depth_one_end_nut_extra
+name: spacer
+description_main: spacer_1_width_1_height_67_67_mm_depth
+description_extra: one_end_nut_extra
+kwargs:
+  width: 1
+  height: 1
+  thickness: 67.67
+  extra: one_end_nut
+  type: three_d_printing_filament_storage_kallax_spacer
+  modes:
+  - 3dpr
+project_name: three_d_printing_filament_storage_kallax
+id_oobb: oobb_part_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_67_67_mm_depth_one_end_nut_extra
+full_shift:
+- 0
+- 0
+- 0
+full_rotations:
+- 0
+- 0
+- 0

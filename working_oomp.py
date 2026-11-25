@@ -1,14 +1,35 @@
-import oomp
 import copy
+from pathlib import Path
+import yaml
+
+
+def catalogue(part_ids):
+    root = Path(__file__).resolve().parent
+    records = []
+    for identifier in part_ids:
+        source = root / "parts_source" / identifier / "working.yaml"
+        record = yaml.safe_load(source.read_text(encoding="utf-8"))
+        if record["id"] != identifier:
+            raise ValueError(f"Unexpected catalogue identity in {source}")
+        record["directory"] = f"parts/{identifier}"
+        folder = root / record["directory"]
+        folder.mkdir(parents=True, exist_ok=True)
+        (folder / "working.yaml").write_text(yaml.safe_dump(record, sort_keys=False), encoding="utf-8")
+        records.append(record)
+    return records
 
 def main(**kwargs):
+    if "part_ids" in kwargs:
+        return catalogue(kwargs["part_ids"])
     if kwargs.get("assembly_documentation", False):
         import working_oomp_populate
         import working_scad
         kwargs = copy.deepcopy(kwargs)
         kwargs.setdefault("configuration", working_oomp_populate.define())
         return working_scad.main(**kwargs)
-    load_parts(**kwargs)
+    from working_oomp_populate import get_options
+    return catalogue([part["id"] for part in get_options()])
+
 
 def load_parts(**kwargs):
     make_files = kwargs.get("make_files", True)
@@ -144,6 +165,7 @@ def create_generic(**kwargs):
 
 
 
+    import oomp
     oomp.add_parts(parts, **kwargs)
 
     #dd file copy
@@ -167,5 +189,4 @@ def create_generic(**kwargs):
 
 
 if __name__ == "__main__":
-    # run the function
-    load_parts()
+    main()

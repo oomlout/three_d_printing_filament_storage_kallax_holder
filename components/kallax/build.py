@@ -54,7 +54,8 @@ def prepare(**kwargs):
     data=dict(style=config['style'],book=config['book'],configuration_title=config['readme']['title'],parts=parts,printed_keys=[k for k,p in parts.items() if p.get('printed')],steps=steps,instances=records,physical_item_count=len(records),source_sha256=source_hashes,readme=config['readme'])
     render_spec=dict(source=source_hashes,instances=records,steps=[{k:s[k] for k in ['shown_instances','offsets']} for s in steps],style=config['style'],renderer={n:digest(Path(__file__).with_name(n)) for n in ['render_studio.py','cad.py']})
     data['render_signature']=hashlib.sha256(json.dumps(render_spec,sort_keys=True).encode()).hexdigest()
-    data['generator_sha256']={str(p.relative_to(ROOT)):digest(p) for p in [ROOT/'working_oomp_populate.py',ROOT/'working_scad.py',ROOT/config['book']['logo_svg'],*Path(__file__).parent.glob('*.py'),Path(__file__).with_name('assembly_viewer.html')]}
+    scripts = [ROOT / name for name in ("action_make_all.py", "working.py", "working_oomp_populate.py", "working_oomp.py", "working_scad.py")]
+    data['generator_sha256']={str(p.relative_to(ROOT)):digest(p) for p in [*scripts,ROOT/config['book']['logo_svg'],*Path(__file__).parent.glob('*.py'),Path(__file__).with_name('assembly_viewer.html')]}
     data['identity_notes']='Hardware codes use existing OOMP identities. Redirects are not registered by this build. M6 x 300 rod remains pending by user instruction. Printed parts have no codes.'
     (output/'assembly_manifest.json').write_text(json.dumps(data,indent=2),encoding='utf-8')
     with (output/'parts.csv').open('w',newline='',encoding='utf-8') as handle:
@@ -83,12 +84,22 @@ def main(**kwargs):
     review_outputs(output=output,data=data)
     from .assembly_viewer import publish as viewer
     viewer(output=output,data=data)
-    for name in ['cell','cabinet','printed','exploded','end-section']:
-        src=ROOT/'source_file/context'/(name+'.png')
+    for name in ['cell','cabinet','printed','exploded']:
+        src=output/'render/raw'/(name+'.png')
         shutil.copyfile(src,output/'readme'/(name+'.png'))
+    for key in data['printed_keys']:
+        part = data['parts'][key]
+        component_dir = (ROOT / part['stl']).parent
+        # Component pages retain their individual print downloads.
+        kit_link = f"../{folder.name}/README.md"
+        note = (f"# {part['name']}\n\n{part['detail']}. Print {part['quantity']} in black for one cell.\n\n"
+                f"[Print STL](3dpr.stl) | [OpenSCAD source](3dpr.scad) | [Complete kit]({kit_link})\n")
+        (component_dir/'readme.md').write_text(note, encoding='utf-8')
     with Image.open(output/'readme/cell.png') as image:
         image.thumbnail((480,480));image.save(output/'readme/thumbnail.png')
     from .documentation import publish as documentation
+    from .print_project import publish as pack_print_project
+    pack_print_project(folder, data)
     documentation(folder=folder,output=output,data=data)
     report=json.loads((output/'validation.json').read_text())
     report.update(source_sha256=data['source_sha256'],render_signature=data['render_signature'],cumulative_inventory_verified=True,hosting='Not published; standalone HTML generated')

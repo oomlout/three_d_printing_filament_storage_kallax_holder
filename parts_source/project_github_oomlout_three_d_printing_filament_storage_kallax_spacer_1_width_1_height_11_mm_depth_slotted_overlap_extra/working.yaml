@@ -1,0 +1,29 @@
+classification: project
+type: github
+size: oomlout
+color: three_d_printing_filament_storage_kallax
+manufacturer: ''
+part_number: ''
+id: project_github_oomlout_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_slotted_overlap_extra
+name: spacer
+description_main: spacer_1_width_1_height_11_mm_depth
+description_extra: slotted_overlap_extra
+kwargs:
+  width: 1
+  height: 1
+  thickness: 11
+  extra: slotted_overlap
+  overlap: 8
+  type: three_d_printing_filament_storage_kallax_spacer
+  modes:
+  - 3dpr
+project_name: three_d_printing_filament_storage_kallax
+id_oobb: oobb_part_three_d_printing_filament_storage_kallax_spacer_1_width_1_height_11_mm_depth_slotted_overlap_extra
+full_shift:
+- 0
+- 0
+- 0
+full_rotations:
+- 0
+- 0
+- 0
