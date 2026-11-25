@@ -94,7 +94,7 @@
     {
       "ref": "H2",
       "name": "M6 hex nut",
-      "quantity": 8,
+      "quantity": 20,
       "spec": "10 mm AF; 5 mm nominal thickness",
       "url": "https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_nut_m6",
       "oomp_id": "hardware_nut_m6",
@@ -193,6 +193,9 @@
       ]
     ],
     "hardware_intervals": {
+      "first_spacer_nut": [108.67, 113.67],
+      "centre_spacer_nut": [185.34, 190.34],
+      "last_spacer_nut": [289.01, 294.01],
       "fixed_nut": [
         0,
         5

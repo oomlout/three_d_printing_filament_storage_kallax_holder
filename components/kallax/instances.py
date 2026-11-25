@@ -12,6 +12,10 @@ def define_instances(**kwargs):
             add('rod_'+str(j), 'H1', [a+150,y,z])
             add('fixed_'+str(j), 'H2', [a+2.5,y,z])
             add('long_first_'+str(j), 'P3', [a+9,y,z])
+            # Five-millimetre nuts fill frame 2, frame 3 and the reversed sleeve mouth.
+            add('first_spacer_nut_'+str(j), 'H2', [a+108.67+2.5,y,z])
+            add('centre_spacer_nut_'+str(j), 'H2', [a+185.34+2.5,y,z])
+            add('last_spacer_nut_'+str(j), 'H2', [a+294.01-2.5,y,z])
             add('centre_'+str(j), 'P4', [a+117.67,y,z])
             add('long_last_'+str(j), 'P3', [a+294.01,y,z], True)
             add('housing_'+str(j), 'P5', [a+294.01,y,z])

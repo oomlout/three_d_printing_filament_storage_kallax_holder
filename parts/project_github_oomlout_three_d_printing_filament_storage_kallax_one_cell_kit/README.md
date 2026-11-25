@@ -2,7 +2,7 @@
 
 AI-generated CAD images and instructions. Errors possible.
 
-[Assembled OpenSCAD model](3dpr.scad) | [P1S print project](kallax_one_cell_p1s.3mf) | [PDF booklet](assembly/assembly_instructions.pdf) · [Standalone HTML viewer](assembly/assembly_instructions.html) · [Full BOM](assembly/parts.csv)
+[Assembled OpenSCAD model](3dpr.scad) | [P1S print project](working.3mf) | [PDF booklet](assembly/assembly_instructions.pdf) · [Standalone HTML viewer](assembly/assembly_instructions.html) · [Full BOM](assembly/parts.csv)
 
 ## Summary
 
@@ -45,7 +45,7 @@ One complete cell. Short holder shown exploded; the rear uses tall frames.
 | Part | Specification | Qty. | OOMP ID | Code |
 | --- | --- | ---: | --- | --- |
 | M6 x 300 threaded rod | 300 mm cut length; M6 x 1.0 | 4 | OOMP record pending | - |
-| [M6 hex nut](https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_nut_m6) | 10 mm AF; 5 mm nominal thickness | 8 | [hardware_nut_m6](https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_nut_m6) | [hcps](https://oom.lt/a/hcps) |
+| [M6 hex nut](https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_nut_m6) | 10 mm AF; 5 mm nominal thickness | 20 | [hardware_nut_m6](https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_nut_m6) | [hcps](https://oom.lt/a/hcps) |
 | [M6 coupling nut 18 mm](https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_nut_m6_coupling) | DIN 6334; 18 mm long; 10 mm AF | 4 | [hardware_nut_m6_coupling](https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_nut_m6_coupling) | [1qsz8](https://oom.lt/a/1qsz8) |
 | [M6 x 25 hex bolt](https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_set_screw_m6_25_mm_length) | 25 mm under head; M6 x 1.0; DIN 933 | 4 | [hardware_set_screw_m6_25_mm_length](https://github.com/oomlout/oomp_hardware_bolt_version_5/tree/main/parts/hardware_set_screw_m6_25_mm_length) | [9dg7e](https://oom.lt/a/9dg7e) |
 
@@ -59,15 +59,15 @@ Cut and deburr four 300 mm M6 rods. Prepare a 10 mm spanner. Steps 1-6 build the
 
    [![AI-generated assembly step 1](assembly/thumbnails/step_01.png)](assembly/cards/step_01.png)
 
-2. Slide one 99.67 mm sleeve onto each rod, then fit the second frame.
+2. Slide a 99.67 mm spacer onto each rod. Thread an M6 nut against each spacer. Fit frame 2 with its hex recesses over the nuts.
 
    [![AI-generated assembly step 2](assembly/thumbnails/step_02.png)](assembly/cards/step_02.png)
 
-3. Fit two 67.67 mm sleeves, the third frame and two 99.67 mm sleeves. Face the last sleeves' hex pockets toward the couplings.
+3. Fit a 67.67 mm spacer and an M6 nut on each rod. Seat frame 3 over the nuts. Fit the last 99.67 mm spacers with their hex pockets facing the couplings.
 
    [![AI-generated assembly step 3](assembly/thumbnails/step_03.png)](assembly/cards/step_03.png)
 
-4. Insert an M6 coupling nut into each 18 mm housing. Thread each coupling approximately 6 mm onto its rod.
+4. Thread an M6 nut onto each rod. Seat it flush in the last spacer’s hex pocket. Fit each coupling nut in its 18 mm housing and thread it about 6 mm onto the rod.
 
    [![AI-generated assembly step 4](assembly/thumbnails/step_04.png)](assembly/cards/step_04.png)
 
@@ -83,15 +83,15 @@ Cut and deburr four 300 mm M6 rods. Prepare a 10 mm spanner. Steps 1-6 build the
 
    [![AI-generated assembly step 7](assembly/thumbnails/step_07.png)](assembly/cards/step_07.png)
 
-8. Slide one 99.67 mm sleeve onto each rod, then fit the second frame.
+8. Slide a 99.67 mm spacer onto each rod. Thread an M6 nut against each spacer. Fit frame 2 with its hex recesses over the nuts.
 
    [![AI-generated assembly step 8](assembly/thumbnails/step_08.png)](assembly/cards/step_08.png)
 
-9. Fit two 67.67 mm sleeves, the third frame and two 99.67 mm sleeves. Face the last sleeves' hex pockets toward the couplings.
+9. Fit a 67.67 mm spacer and an M6 nut on each rod. Seat frame 3 over the nuts. Fit the last 99.67 mm spacers with their hex pockets facing the couplings.
 
    [![AI-generated assembly step 9](assembly/thumbnails/step_09.png)](assembly/cards/step_09.png)
 
-10. Insert an M6 coupling nut into each 18 mm housing. Thread each coupling approximately 6 mm onto its rod.
+10. Thread an M6 nut onto each rod. Seat it flush in the last spacer’s hex pocket. Fit each coupling nut in its 18 mm housing and thread it about 6 mm onto the rod.
 
    [![AI-generated assembly step 10](assembly/thumbnails/step_10.png)](assembly/cards/step_10.png)
 
@@ -109,4 +109,4 @@ Place the tall holder at the rear and the short holder at the front. Seat all fe
 
 The 11 mm clip seats 8 mm over the 11 mm retaining cover. The two pieces span 14 mm together.
 
-Per rail: one coupling; one fixed nut; one retaining nut; one 25 mm bolt. Nominal engagement: rod 5.99 mm, bolt 7 mm. A different span requires a revised slotted cover and an engagement check.
+Each rail uses five M6 nuts (one fixed, three spacer nuts and one bolt retaining nut), one coupling nut and one 25 mm bolt. Nominal engagement: rod 5.99 mm, bolt 7 mm. A different span requires a revised slotted cover and an engagement check.

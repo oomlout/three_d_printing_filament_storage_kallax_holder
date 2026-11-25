@@ -8,15 +8,15 @@ AI-generated CAD images and instructions. Errors possible.
 
    [![AI-generated assembly step 1](assembly/thumbnails/step_01.png)](assembly/cards/step_01.png)
 
-2. Slide one 99.67 mm sleeve onto each rod, then fit the second frame.
+2. Slide a 99.67 mm spacer onto each rod. Thread an M6 nut against each spacer. Fit frame 2 with its hex recesses over the nuts.
 
    [![AI-generated assembly step 2](assembly/thumbnails/step_02.png)](assembly/cards/step_02.png)
 
-3. Fit two 67.67 mm sleeves, the third frame and two 99.67 mm sleeves. Face the last sleeves' hex pockets toward the couplings.
+3. Fit a 67.67 mm spacer and an M6 nut on each rod. Seat frame 3 over the nuts. Fit the last 99.67 mm spacers with their hex pockets facing the couplings.
 
    [![AI-generated assembly step 3](assembly/thumbnails/step_03.png)](assembly/cards/step_03.png)
 
-4. Insert an M6 coupling nut into each 18 mm housing. Thread each coupling approximately 6 mm onto its rod.
+4. Thread an M6 nut onto each rod. Seat it flush in the last spacer’s hex pocket. Fit each coupling nut in its 18 mm housing and thread it about 6 mm onto the rod.
 
    [![AI-generated assembly step 4](assembly/thumbnails/step_04.png)](assembly/cards/step_04.png)
 
@@ -32,15 +32,15 @@ AI-generated CAD images and instructions. Errors possible.
 
    [![AI-generated assembly step 7](assembly/thumbnails/step_07.png)](assembly/cards/step_07.png)
 
-8. Slide one 99.67 mm sleeve onto each rod, then fit the second frame.
+8. Slide a 99.67 mm spacer onto each rod. Thread an M6 nut against each spacer. Fit frame 2 with its hex recesses over the nuts.
 
    [![AI-generated assembly step 8](assembly/thumbnails/step_08.png)](assembly/cards/step_08.png)
 
-9. Fit two 67.67 mm sleeves, the third frame and two 99.67 mm sleeves. Face the last sleeves' hex pockets toward the couplings.
+9. Fit a 67.67 mm spacer and an M6 nut on each rod. Seat frame 3 over the nuts. Fit the last 99.67 mm spacers with their hex pockets facing the couplings.
 
    [![AI-generated assembly step 9](assembly/thumbnails/step_09.png)](assembly/cards/step_09.png)
 
-10. Insert an M6 coupling nut into each 18 mm housing. Thread each coupling approximately 6 mm onto its rod.
+10. Thread an M6 nut onto each rod. Seat it flush in the last spacer’s hex pocket. Fit each coupling nut in its 18 mm housing and thread it about 6 mm onto the rod.
 
    [![AI-generated assembly step 10](assembly/thumbnails/step_10.png)](assembly/cards/step_10.png)
 

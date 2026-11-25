@@ -32,7 +32,7 @@ in populate. Reusable helpers live in `components/kallax/`.
 
 Each cell has four short frames, four tall frames and four 300 mm M6 rods.
 The holders are independent. Preserve recessed fixed nuts and bolt heads,
-one coupling per rail, inner retaining nuts, 11 mm hex covers and 11 mm slotted
+three spacer nuts and one coupling per rail, inner retaining nuts, 11 mm hex covers and 11 mm slotted
 covers. The rod OOMP record remains pending by user instruction; do not invent
 a catalogue record or shortlink. Printed parts have no alpha codes.
 

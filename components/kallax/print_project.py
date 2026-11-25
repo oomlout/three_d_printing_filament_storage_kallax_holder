@@ -17,6 +17,9 @@ import trimesh
 from PIL import Image, ImageDraw
 
 from .assembly_cards import ROOT
+from .p1s_print_kit import add_printable_copy, validate_kit_archive
+
+PROJECT_FILENAME = 'working.3mf'
 
 NS = 'http://schemas.microsoft.com/3dmanufacturing/core/2015/02'
 ET.register_namespace('', NS)
@@ -43,7 +46,7 @@ def xml(element):
 
 def publish(folder, data):
     source = ROOT/'source_file/default.3mf'
-    dest = folder/'kallax_one_cell_p1s.3mf'
+    dest = folder / PROJECT_FILENAME
     print_dir = folder/'print'
     print_dir.mkdir(exist_ok=True)
     template = zipfile.ZipFile(source)
@@ -58,27 +61,27 @@ def publish(folder, data):
     build=ET.SubElement(model,core('build'))
     config=ET.Element('config')
     meshes={}
+    geometry_by_key={}
     for key in data['printed_keys']:
         part=data['parts'][key]
         stl=ROOT/part['stl']
         shutil.copyfile(stl, print_dir/(key+'.stl'))
         mesh=trimesh.load(stl,force='mesh')
         assert mesh.is_watertight and len(mesh.split())==1
-        # Centre XY for placement. Keep the production print Z orientation.
+        # Frames and one-end sleeves have 5 mm nut recesses on the CAD bottom.
+        if key in ("P1", "P2", "P3", "P4"):
+            mesh.apply_transform(np.diag([1, -1, -1, 1]))  # Half turn about X.
+        # Centre the oriented part and seat its lowest face on the bed.
         mesh.apply_translation([-mesh.bounds[:,0].mean(),-mesh.bounds[:,1].mean(),-mesh.bounds[0,2]])
         meshes[key]=mesh
-        oid=key[1:]
-        obj=ET.SubElement(resources,core('object'),id=oid,type='model',name=part['name'])
-        geometry=ET.SubElement(obj,core('mesh'))
+        geometry=ET.Element(core('mesh'))
+        geometry_by_key[key]=geometry
         vertices=ET.SubElement(geometry,core('vertices'))
         for x,y,z in mesh.vertices:
             ET.SubElement(vertices,core('vertex'),x=f'{x:.7f}',y=f'{y:.7f}',z=f'{z:.7f}')
         triangles=ET.SubElement(geometry,core('triangles'))
         for a,b,c in mesh.faces:
             ET.SubElement(triangles,core('triangle'),v1=str(a),v2=str(b),v3=str(c))
-        item=ET.SubElement(config,'object',id=oid)
-        metadata(item,'name',part['name'])
-        metadata(item,'extruder',1)
     plate_template=ET.fromstring(template.read('Metadata/model_settings.config')).find('plate')
     plates={}; previews={}; bounds={}; counts=Counter()
     origins={1:(0,0),2:(307.2,0),3:(0,-307.2)}
@@ -101,9 +104,13 @@ def publish(folder, data):
         assert all(box[0]>=b[2]+3 or box[2]<=b[0]-3 or box[1]>=b[3]+3 or box[3]<=b[1]-3 for b in bounds[num])
         bounds[num].append(box)
         ox,oy=origins[num]
-        ET.SubElement(build,core('item'),objectid=key[1:],transform=f'1 0 0 0 1 0 0 0 1 {x+ox} {y+oy} 0',printable='1')
-        instance=ET.SubElement(plates[num],'model_instance')
-        metadata(instance,'object_id',key[1:]);metadata(instance,'instance_id',counts[key]);metadata(instance,'identify_id',ident)
+        part = data['parts'][key]
+        add_printable_copy(
+            serial=ident,
+            name=f"{part['name']} ({counts[key]+1} of {part['quantity']})",
+            mesh=geometry_by_key[key], resources=resources, build=build, settings=config,
+            plate=plates[num], transform=f'1 0 0 0 1 0 0 0 1 {x+ox} {y+oy} 0', filament=1,
+        )
         counts[key]+=1
         draw=ImageDraw.Draw(previews[num])
         # Top-facing triangles yield the actual plate silhouette, including holes.
@@ -122,6 +129,7 @@ def publish(folder, data):
                 stream=io.BytesIO();im.resize((size,size),Image.Resampling.LANCZOS).save(stream,format='PNG')
                 out.writestr(f'Metadata/plate_{num}{suffix}.png',stream.getvalue())
     template.close()
+    validate_kit_archive(dest.with_suffix('.tmp'), count=sum(counts.values()))
     dest.with_suffix('.tmp').replace(dest)
 
 
@@ -132,7 +140,7 @@ def validate_slice(folder):
         binary = Path(os.environ.get("ProgramFiles", "")) / "Bambu Studio" / "bambu-studio.exe"
     if not Path(binary).is_file():
         raise FileNotFoundError("Install Bambu Studio or put bambu-studio on PATH to slice the kit.")
-    project = folder / "kallax_one_cell_p1s.3mf"
+    project = folder / PROJECT_FILENAME
     starter = ROOT / "source_file/default.3mf"
     with zipfile.ZipFile(project) as kit, zipfile.ZipFile(starter) as template:
         settings = "Metadata/project_settings.config"

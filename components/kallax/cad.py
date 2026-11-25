@@ -215,6 +215,9 @@ def rail(cx,y,z,explode=0,expose=False):
         clip.rotation_euler=Matrix(((0,0,1),(-1,0,0),(0,-1,0))).to_euler()  # slot down
         spacer(11,(a+315.01+explode*5,y,z),'full_nut',name='E | 11 mm retaining nut cover')
     coupling(a+2.5-explode*4,y,z,5)
+    coupling(a+111.17-explode,y,z,5,name="Frame 2 spacer nut")
+    coupling(a+187.84+explode,y,z,5,name="Frame 3 spacer nut")
+    coupling(a+291.51+explode*2.5,y,z,5,name="Final spacer nut")
     coupling(a+303.01+explode*3,y,z)
     coupling(a+323.51+explode*5,y,z,5,name='M6 adjustment bolt retaining nut')
     adjustment_bolt(a+330.01+explode*6,y,z)

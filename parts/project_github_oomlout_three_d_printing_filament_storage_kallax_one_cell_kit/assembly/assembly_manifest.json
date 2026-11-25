@@ -57,7 +57,7 @@
       "Nominal opening: 335 mm. Rail heights: 37 mm front, 112 mm rear. Row centres: 187 mm.",
       "Print all plastic parts in black. Use the 11 mm nut covers and 11 mm slotted covers.",
       "Cut four M6 threaded rods to 300 mm and deburr the ends. Prepare a 10 mm spanner.",
-      "Each rail: one 18 mm M6 coupling nut, one M6 x 25 fully threaded hex bolt and two M6 nuts.",
+      "Each rail: one 18 mm M6 coupling nut, one M6 x 25 fully threaded hex bolt and five M6 nuts.",
       "Seat the fixed nut and bolt head in the outer frame recesses. Retain the bolt with an inner nut.",
       "Nominal coupling engagement: rod 5.99 mm; bolt 7 mm. Bolt length is measured under the head.",
       "Measure the actual opening before adjustment. Do not force the cabinet sides apart.",
@@ -149,7 +149,7 @@
       "name": "M6 hex nut",
       "detail": "10 mm AF; 5 mm nominal thickness",
       "id": "hardware_nut_m6",
-      "quantity": 8,
+      "quantity": 20,
       "catalogue_status": "verified",
       "identity_source": "OOMP identity verified 2026-11-06; actual thickness to be checked",
       "md5_6_alpha": "hcps",
@@ -264,9 +264,10 @@
     },
     {
       "title": "Fit the first sleeves",
-      "action": "Slide one 99.67 mm sleeve onto each rod, then fit the second frame.",
+      "action": "Slide a 99.67 mm spacer onto each rod. Thread an M6 nut against each spacer. Fit frame 2 with its hex recesses over the nuts.",
       "add": [
         "front_long_first_*",
+        "front_first_spacer_nut_*",
         "front_frame_2"
       ],
       "move": {
@@ -275,8 +276,13 @@
           0,
           0
         ],
-        "front_frame_2": [
+        "front_first_spacer_nut_*": [
           40,
+          0,
+          0
+        ],
+        "front_frame_2": [
+          65,
           0,
           0
         ]
@@ -286,6 +292,8 @@
       "added_instances": [
         "front_long_first_0",
         "front_long_first_1",
+        "front_first_spacer_nut_0",
+        "front_first_spacer_nut_1",
         "front_frame_2"
       ],
       "shown_instances": [
@@ -294,9 +302,11 @@
         "front_rod_0",
         "front_fixed_0",
         "front_long_first_0",
+        "front_first_spacer_nut_0",
         "front_rod_1",
         "front_fixed_1",
-        "front_long_first_1"
+        "front_long_first_1",
+        "front_first_spacer_nut_1"
       ],
       "offsets": {
         "front_long_first_0": [
@@ -309,38 +319,55 @@
           0.0,
           0.0
         ],
-        "front_frame_2": [
+        "front_first_spacer_nut_0": [
           54.0,
+          0.0,
+          0.0
+        ],
+        "front_first_spacer_nut_1": [
+          54.0,
+          0.0,
+          0.0
+        ],
+        "front_frame_2": [
+          87.75,
           0.0,
           0.0
         ]
       },
       "loose_parts": {
         "P3": 2,
+        "H2": 2,
         "P1": 1
       }
     },
     {
       "title": "Fit the centre and remaining sleeves",
-      "action": "Fit two 67.67 mm sleeves, the third frame and two 99.67 mm sleeves. Face the last sleeves' hex pockets toward the couplings.",
+      "action": "Fit a 67.67 mm spacer and an M6 nut on each rod. Seat frame 3 over the nuts. Fit the last 99.67 mm spacers with their hex pockets facing the couplings.",
       "add": [
-        "front_centre_*",
+        "front_centre_?",
+        "front_centre_spacer_nut_*",
         "front_frame_3",
         "front_long_last_*"
       ],
       "move": {
-        "front_centre_*": [
+        "front_centre_?": [
           20,
           0,
           0
         ],
-        "front_frame_3": [
+        "front_centre_spacer_nut_*": [
           40,
           0,
           0
         ],
+        "front_frame_3": [
+          65,
+          0,
+          0
+        ],
         "front_long_last_*": [
-          60,
+          85,
           0,
           0
         ]
@@ -350,6 +377,8 @@
       "added_instances": [
         "front_centre_0",
         "front_centre_1",
+        "front_centre_spacer_nut_0",
+        "front_centre_spacer_nut_1",
         "front_frame_3",
         "front_long_last_0",
         "front_long_last_1"
@@ -361,11 +390,15 @@
         "front_rod_0",
         "front_fixed_0",
         "front_long_first_0",
+        "front_first_spacer_nut_0",
+        "front_centre_spacer_nut_0",
         "front_centre_0",
         "front_long_last_0",
         "front_rod_1",
         "front_fixed_1",
         "front_long_first_1",
+        "front_first_spacer_nut_1",
+        "front_centre_spacer_nut_1",
         "front_centre_1",
         "front_long_last_1"
       ],
@@ -380,43 +413,60 @@
           0.0,
           0.0
         ],
-        "front_frame_3": [
+        "front_centre_spacer_nut_0": [
           54.0,
           0.0,
           0.0
         ],
+        "front_centre_spacer_nut_1": [
+          54.0,
+          0.0,
+          0.0
+        ],
+        "front_frame_3": [
+          87.75,
+          0.0,
+          0.0
+        ],
         "front_long_last_0": [
-          81.0,
+          114.75000000000001,
           0.0,
           0.0
         ],
         "front_long_last_1": [
-          81.0,
+          114.75000000000001,
           0.0,
           0.0
         ]
       },
       "loose_parts": {
         "P4": 2,
+        "H2": 2,
         "P1": 1,
         "P3": 2
       }
     },
     {
       "title": "Fit the couplings",
-      "action": "Insert an M6 coupling nut into each 18 mm housing. Thread each coupling approximately 6 mm onto its rod.",
+      "action": "Thread an M6 nut onto each rod. Seat it flush in the last spacer\u2019s hex pocket. Fit each coupling nut in its 18 mm housing and thread it about 6 mm onto the rod.",
       "add": [
+        "front_last_spacer_nut_*",
         "front_coupling_*",
         "front_housing_*"
       ],
       "move": {
+        "front_last_spacer_nut_*": [
+          20,
+          0,
+          0
+        ],
         "front_coupling_*": [
-          25,
+          45,
           0,
           0
         ],
         "front_housing_*": [
-          50,
+          70,
           0,
           0
         ]
@@ -424,6 +474,8 @@
       "number": 4,
       "key": "step_04",
       "added_instances": [
+        "front_last_spacer_nut_0",
+        "front_last_spacer_nut_1",
         "front_coupling_0",
         "front_coupling_1",
         "front_housing_0",
@@ -436,6 +488,9 @@
         "front_rod_0",
         "front_fixed_0",
         "front_long_first_0",
+        "front_first_spacer_nut_0",
+        "front_centre_spacer_nut_0",
+        "front_last_spacer_nut_0",
         "front_centre_0",
         "front_long_last_0",
         "front_housing_0",
@@ -443,34 +498,48 @@
         "front_rod_1",
         "front_fixed_1",
         "front_long_first_1",
+        "front_first_spacer_nut_1",
+        "front_centre_spacer_nut_1",
+        "front_last_spacer_nut_1",
         "front_centre_1",
         "front_long_last_1",
         "front_housing_1",
         "front_coupling_1"
       ],
       "offsets": {
+        "front_last_spacer_nut_0": [
+          27.0,
+          0.0,
+          0.0
+        ],
+        "front_last_spacer_nut_1": [
+          27.0,
+          0.0,
+          0.0
+        ],
         "front_coupling_0": [
-          33.75,
+          60.75000000000001,
           0.0,
           0.0
         ],
         "front_coupling_1": [
-          33.75,
+          60.75000000000001,
           0.0,
           0.0
         ],
         "front_housing_0": [
-          67.5,
+          94.5,
           0.0,
           0.0
         ],
         "front_housing_1": [
-          67.5,
+          94.5,
           0.0,
           0.0
         ]
       },
       "loose_parts": {
+        "H2": 2,
         "H3": 2,
         "P5": 2
       }
@@ -525,6 +594,9 @@
         "front_rod_0",
         "front_fixed_0",
         "front_long_first_0",
+        "front_first_spacer_nut_0",
+        "front_centre_spacer_nut_0",
+        "front_last_spacer_nut_0",
         "front_centre_0",
         "front_long_last_0",
         "front_housing_0",
@@ -535,6 +607,9 @@
         "front_rod_1",
         "front_fixed_1",
         "front_long_first_1",
+        "front_first_spacer_nut_1",
+        "front_centre_spacer_nut_1",
+        "front_last_spacer_nut_1",
         "front_centre_1",
         "front_long_last_1",
         "front_housing_1",
@@ -614,6 +689,9 @@
         "front_rod_0",
         "front_fixed_0",
         "front_long_first_0",
+        "front_first_spacer_nut_0",
+        "front_centre_spacer_nut_0",
+        "front_last_spacer_nut_0",
         "front_centre_0",
         "front_long_last_0",
         "front_housing_0",
@@ -625,6 +703,9 @@
         "front_rod_1",
         "front_fixed_1",
         "front_long_first_1",
+        "front_first_spacer_nut_1",
+        "front_centre_spacer_nut_1",
+        "front_last_spacer_nut_1",
         "front_centre_1",
         "front_long_last_1",
         "front_housing_1",
@@ -687,6 +768,9 @@
         "front_rod_0",
         "front_fixed_0",
         "front_long_first_0",
+        "front_first_spacer_nut_0",
+        "front_centre_spacer_nut_0",
+        "front_last_spacer_nut_0",
         "front_centre_0",
         "front_long_last_0",
         "front_housing_0",
@@ -698,6 +782,9 @@
         "front_rod_1",
         "front_fixed_1",
         "front_long_first_1",
+        "front_first_spacer_nut_1",
+        "front_centre_spacer_nut_1",
+        "front_last_spacer_nut_1",
         "front_centre_1",
         "front_long_last_1",
         "front_housing_1",
@@ -742,9 +829,10 @@
     },
     {
       "title": "Fit the first sleeves",
-      "action": "Slide one 99.67 mm sleeve onto each rod, then fit the second frame.",
+      "action": "Slide a 99.67 mm spacer onto each rod. Thread an M6 nut against each spacer. Fit frame 2 with its hex recesses over the nuts.",
       "add": [
         "rear_long_first_*",
+        "rear_first_spacer_nut_*",
         "rear_frame_2"
       ],
       "move": {
@@ -753,8 +841,13 @@
           0,
           0
         ],
-        "rear_frame_2": [
+        "rear_first_spacer_nut_*": [
           40,
+          0,
+          0
+        ],
+        "rear_frame_2": [
+          65,
           0,
           0
         ]
@@ -764,6 +857,8 @@
       "added_instances": [
         "rear_long_first_0",
         "rear_long_first_1",
+        "rear_first_spacer_nut_0",
+        "rear_first_spacer_nut_1",
         "rear_frame_2"
       ],
       "shown_instances": [
@@ -774,6 +869,9 @@
         "front_rod_0",
         "front_fixed_0",
         "front_long_first_0",
+        "front_first_spacer_nut_0",
+        "front_centre_spacer_nut_0",
+        "front_last_spacer_nut_0",
         "front_centre_0",
         "front_long_last_0",
         "front_housing_0",
@@ -785,6 +883,9 @@
         "front_rod_1",
         "front_fixed_1",
         "front_long_first_1",
+        "front_first_spacer_nut_1",
+        "front_centre_spacer_nut_1",
+        "front_last_spacer_nut_1",
         "front_centre_1",
         "front_long_last_1",
         "front_housing_1",
@@ -798,9 +899,11 @@
         "rear_rod_0",
         "rear_fixed_0",
         "rear_long_first_0",
+        "rear_first_spacer_nut_0",
         "rear_rod_1",
         "rear_fixed_1",
-        "rear_long_first_1"
+        "rear_long_first_1",
+        "rear_first_spacer_nut_1"
       ],
       "offsets": {
         "rear_long_first_0": [
@@ -813,38 +916,55 @@
           0.0,
           0.0
         ],
-        "rear_frame_2": [
+        "rear_first_spacer_nut_0": [
           54.0,
+          0.0,
+          0.0
+        ],
+        "rear_first_spacer_nut_1": [
+          54.0,
+          0.0,
+          0.0
+        ],
+        "rear_frame_2": [
+          87.75,
           0.0,
           0.0
         ]
       },
       "loose_parts": {
         "P3": 2,
+        "H2": 2,
         "P2": 1
       }
     },
     {
       "title": "Fit the centre and remaining sleeves",
-      "action": "Fit two 67.67 mm sleeves, the third frame and two 99.67 mm sleeves. Face the last sleeves' hex pockets toward the couplings.",
+      "action": "Fit a 67.67 mm spacer and an M6 nut on each rod. Seat frame 3 over the nuts. Fit the last 99.67 mm spacers with their hex pockets facing the couplings.",
       "add": [
-        "rear_centre_*",
+        "rear_centre_?",
+        "rear_centre_spacer_nut_*",
         "rear_frame_3",
         "rear_long_last_*"
       ],
       "move": {
-        "rear_centre_*": [
+        "rear_centre_?": [
           20,
           0,
           0
         ],
-        "rear_frame_3": [
+        "rear_centre_spacer_nut_*": [
           40,
           0,
           0
         ],
+        "rear_frame_3": [
+          65,
+          0,
+          0
+        ],
         "rear_long_last_*": [
-          60,
+          85,
           0,
           0
         ]
@@ -854,6 +974,8 @@
       "added_instances": [
         "rear_centre_0",
         "rear_centre_1",
+        "rear_centre_spacer_nut_0",
+        "rear_centre_spacer_nut_1",
         "rear_frame_3",
         "rear_long_last_0",
         "rear_long_last_1"
@@ -866,6 +988,9 @@
         "front_rod_0",
         "front_fixed_0",
         "front_long_first_0",
+        "front_first_spacer_nut_0",
+        "front_centre_spacer_nut_0",
+        "front_last_spacer_nut_0",
         "front_centre_0",
         "front_long_last_0",
         "front_housing_0",
@@ -877,6 +1002,9 @@
         "front_rod_1",
         "front_fixed_1",
         "front_long_first_1",
+        "front_first_spacer_nut_1",
+        "front_centre_spacer_nut_1",
+        "front_last_spacer_nut_1",
         "front_centre_1",
         "front_long_last_1",
         "front_housing_1",
@@ -891,11 +1019,15 @@
         "rear_rod_0",
         "rear_fixed_0",
         "rear_long_first_0",
+        "rear_first_spacer_nut_0",
+        "rear_centre_spacer_nut_0",
         "rear_centre_0",
         "rear_long_last_0",
         "rear_rod_1",
         "rear_fixed_1",
         "rear_long_first_1",
+        "rear_first_spacer_nut_1",
+        "rear_centre_spacer_nut_1",
         "rear_centre_1",
         "rear_long_last_1"
       ],
@@ -910,43 +1042,60 @@
           0.0,
           0.0
         ],
-        "rear_frame_3": [
+        "rear_centre_spacer_nut_0": [
           54.0,
           0.0,
           0.0
         ],
+        "rear_centre_spacer_nut_1": [
+          54.0,
+          0.0,
+          0.0
+        ],
+        "rear_frame_3": [
+          87.75,
+          0.0,
+          0.0
+        ],
         "rear_long_last_0": [
-          81.0,
+          114.75000000000001,
           0.0,
           0.0
         ],
         "rear_long_last_1": [
-          81.0,
+          114.75000000000001,
           0.0,
           0.0
         ]
       },
       "loose_parts": {
         "P4": 2,
+        "H2": 2,
         "P2": 1,
         "P3": 2
       }
     },
     {
       "title": "Fit the couplings",
-      "action": "Insert an M6 coupling nut into each 18 mm housing. Thread each coupling approximately 6 mm onto its rod.",
+      "action": "Thread an M6 nut onto each rod. Seat it flush in the last spacer\u2019s hex pocket. Fit each coupling nut in its 18 mm housing and thread it about 6 mm onto the rod.",
       "add": [
+        "rear_last_spacer_nut_*",
         "rear_coupling_*",
         "rear_housing_*"
       ],
       "move": {
+        "rear_last_spacer_nut_*": [
+          20,
+          0,
+          0
+        ],
         "rear_coupling_*": [
-          25,
+          45,
           0,
           0
         ],
         "rear_housing_*": [
-          50,
+          70,
           0,
           0
         ]
@@ -954,6 +1103,8 @@
       "number": 10,
       "key": "step_10",
       "added_instances": [
+        "rear_last_spacer_nut_0",
+        "rear_last_spacer_nut_1",
         "rear_coupling_0",
         "rear_coupling_1",
         "rear_housing_0",
@@ -967,6 +1118,9 @@
         "front_rod_0",
         "front_fixed_0",
         "front_long_first_0",
+        "front_first_spacer_nut_0",
+        "front_centre_spacer_nut_0",
+        "front_last_spacer_nut_0",
         "front_centre_0",
         "front_long_last_0",
         "front_housing_0",
@@ -978,6 +1132,9 @@
         "front_rod_1",
         "front_fixed_1",
         "front_long_first_1",
+        "front_first_spacer_nut_1",
+        "front_centre_spacer_nut_1",
+        "front_last_spacer_nut_1",
         "front_centre_1",
         "front_long_last_1",
         "front_housing_1",
@@ -992,6 +1149,9 @@
         "rear_rod_0",
         "rear_fixed_0",
         "rear_long_first_0",
+        "rear_first_spacer_nut_0",
+        "rear_centre_spacer_nut_0",
+        "rear_last_spacer_nut_0",
         "rear_centre_0",
         "rear_long_last_0",
         "rear_housing_0",
@@ -999,34 +1159,48 @@
         "rear_rod_1",
         "rear_fixed_1",
         "rear_long_first_1",
+        "rear_first_spacer_nut_1",
+        "rear_centre_spacer_nut_1",
+        "rear_last_spacer_nut_1",
         "rear_centre_1",
         "rear_long_last_1",
         "rear_housing_1",
         "rear_coupling_1"
       ],
       "offsets": {
+        "rear_last_spacer_nut_0": [
+          27.0,
+          0.0,
+          0.0
+        ],
+        "rear_last_spacer_nut_1": [
+          27.0,
+          0.0,
+          0.0
+        ],
         "rear_coupling_0": [
-          33.75,
+          60.75000000000001,
           0.0,
           0.0
         ],
         "rear_coupling_1": [
-          33.75,
+          60.75000000000001,
           0.0,
           0.0
         ],
         "rear_housing_0": [
-          67.5,
+          94.5,
           0.0,
           0.0
         ],
         "rear_housing_1": [
-          67.5,
+          94.5,
           0.0,
           0.0
         ]
       },
       "loose_parts": {
+        "H2": 2,
         "H3": 2,
         "P5": 2
       }
@@ -1081,6 +1255,9 @@
         "front_rod_0",
         "front_fixed_0",
         "front_long_first_0",
+        "front_first_spacer_nut_0",
+        "front_centre_spacer_nut_0",
+        "front_last_spacer_nut_0",
         "front_centre_0",
         "front_long_last_0",
         "front_housing_0",
@@ -1092,6 +1269,9 @@
         "front_rod_1",
         "front_fixed_1",
         "front_long_first_1",
+        "front_first_spacer_nut_1",
+        "front_centre_spacer_nut_1",
+        "front_last_spacer_nut_1",
         "front_centre_1",
         "front_long_last_1",
         "front_housing_1",
@@ -1107,6 +1287,9 @@
         "rear_rod_0",
         "rear_fixed_0",
         "rear_long_first_0",
+        "rear_first_spacer_nut_0",
+        "rear_centre_spacer_nut_0",
+        "rear_last_spacer_nut_0",
         "rear_centre_0",
         "rear_long_last_0",
         "rear_housing_0",
@@ -1117,6 +1300,9 @@
         "rear_rod_1",
         "rear_fixed_1",
         "rear_long_first_1",
+        "rear_first_spacer_nut_1",
+        "rear_centre_spacer_nut_1",
+        "rear_last_spacer_nut_1",
         "rear_centre_1",
         "rear_long_last_1",
         "rear_housing_1",
@@ -1196,6 +1382,9 @@
         "front_rod_0",
         "front_fixed_0",
         "front_long_first_0",
+        "front_first_spacer_nut_0",
+        "front_centre_spacer_nut_0",
+        "front_last_spacer_nut_0",
         "front_centre_0",
         "front_long_last_0",
         "front_housing_0",
@@ -1207,6 +1396,9 @@
         "front_rod_1",
         "front_fixed_1",
         "front_long_first_1",
+        "front_first_spacer_nut_1",
+        "front_centre_spacer_nut_1",
+        "front_last_spacer_nut_1",
         "front_centre_1",
         "front_long_last_1",
         "front_housing_1",
@@ -1222,6 +1414,9 @@
         "rear_rod_0",
         "rear_fixed_0",
         "rear_long_first_0",
+        "rear_first_spacer_nut_0",
+        "rear_centre_spacer_nut_0",
+        "rear_last_spacer_nut_0",
         "rear_centre_0",
         "rear_long_last_0",
         "rear_housing_0",
@@ -1233,6 +1428,9 @@
         "rear_rod_1",
         "rear_fixed_1",
         "rear_long_first_1",
+        "rear_first_spacer_nut_1",
+        "rear_centre_spacer_nut_1",
+        "rear_last_spacer_nut_1",
         "rear_centre_1",
         "rear_long_last_1",
         "rear_housing_1",
@@ -1325,6 +1523,36 @@
       "part": "P3",
       "pos": [
         -158.505,
+        -67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_first_spacer_nut_0",
+      "part": "H2",
+      "pos": [
+        -56.334999999999994,
+        -67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_centre_spacer_nut_0",
+      "part": "H2",
+      "pos": [
+        20.335000000000008,
+        -67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_last_spacer_nut_0",
+      "part": "H2",
+      "pos": [
+        124.005,
         -67.5,
         37
       ],
@@ -1435,6 +1663,36 @@
       "part": "P3",
       "pos": [
         -158.505,
+        67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_first_spacer_nut_1",
+      "part": "H2",
+      "pos": [
+        -56.334999999999994,
+        67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_centre_spacer_nut_1",
+      "part": "H2",
+      "pos": [
+        20.335000000000008,
+        67.5,
+        37
+      ],
+      "reverse": false
+    },
+    {
+      "name": "front_last_spacer_nut_1",
+      "part": "H2",
+      "pos": [
+        124.005,
         67.5,
         37
       ],
@@ -1591,6 +1849,36 @@
       "reverse": false
     },
     {
+      "name": "rear_first_spacer_nut_0",
+      "part": "H2",
+      "pos": [
+        -56.334999999999994,
+        119.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_centre_spacer_nut_0",
+      "part": "H2",
+      "pos": [
+        20.335000000000008,
+        119.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_last_spacer_nut_0",
+      "part": "H2",
+      "pos": [
+        124.005,
+        119.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
       "name": "rear_centre_0",
       "part": "P4",
       "pos": [
@@ -1701,6 +1989,36 @@
       "reverse": false
     },
     {
+      "name": "rear_first_spacer_nut_1",
+      "part": "H2",
+      "pos": [
+        -56.334999999999994,
+        254.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_centre_spacer_nut_1",
+      "part": "H2",
+      "pos": [
+        20.335000000000008,
+        254.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
+      "name": "rear_last_spacer_nut_1",
+      "part": "H2",
+      "pos": [
+        124.005,
+        254.5,
+        112
+      ],
+      "reverse": false
+    },
+    {
       "name": "rear_centre_1",
       "part": "P4",
       "pos": [
@@ -1781,7 +2099,7 @@
       "reverse": false
     }
   ],
-  "physical_item_count": 52,
+  "physical_item_count": 64,
   "source_sha256": {
     "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_3_height_9_mm_depth_short_extra/3dpr.stl": "22f0743f183a6f66658544e4ebb6846262f7bdf2233a0034b959ccd804e1431f",
     "parts/project_github_oomlout_three_d_printing_filament_storage_kallax_side_10_width_8_height_9_mm_depth_short_extra/3dpr.stl": "7e5db842ab71d3b51fab732619bfde52d47541393ec15679278a19f57b1e3729",
@@ -1801,11 +2119,11 @@
     "version_description": "Four short and four tall frames; four adjustable M6 rails. Five front reels and five rear refills.",
     "installation": "Place the tall holder at the rear and the short holder at the front. Seat all feet on the shelf. Load the strapped rear refills, then the five front reels."
   },
-  "render_signature": "77465335bf9c40ed1c08666e7b91fb207c3ff41886fd11e75c69421e2eb8284e",
+  "render_signature": "a793168d502f66d2268f05da3579d92db251bd4fe0c51d4de09b01499d722a83",
   "generator_sha256": {
     "action_make_all.py": "92251adab773a1c180829964430df123a5019eb9f4f2e29fa6c908fc1283ea46",
     "working.py": "7f7d5950abffd335f7a87b2266069a623b18fb8a4f39263e3509bb527dd4e2df",
-    "working_oomp_populate.py": "aba12b31715d5b8b9d0d21a46f6d6e07b15c84868d84a96ace65f73f7ac6e60a",
+    "working_oomp_populate.py": "e46f8fe6d36d8bdffca2f9848c67331d0a8ad4d842685468ea2b61a4c61f0afa",
     "working_oomp.py": "8efd7a12d675cf521d72da02bfccb44203f5f51fc3b497e44fa818cbdb0c8ecf",
     "working_scad.py": "545ea5b772508d09aaad1decd39ecac27b2397a0c778360b0a2b96afef783922",
     "source_file\\oomlout_logo_unshaded_original.svg": "72918ba326599a1e6ae495ae4cabb51cc7a462035d35ee30de984229e30d9d67",
@@ -1813,11 +2131,12 @@
     "components\\kallax\\assembly_cards.py": "1258eadb7f2d399e6362985ab8328889cf73a30f205c73f34729e6a8848b8714",
     "components\\kallax\\assembly_viewer.py": "94aacc295569b17aaef9f20f4a135f52db35bfe69521e4bca4f0eb0c01593060",
     "components\\kallax\\build.py": "f43b6e52932b3c58fe7509328b7570d7f1b99355d7fa4d6c16d0049c32a25023",
-    "components\\kallax\\cad.py": "0848134e773969d25ecac80a1528eda4abeb495cfbbb42d60b101481efef6335",
-    "components\\kallax\\documentation.py": "7a62a810a8a78d4779fddbcbb3729892436fae8168230e433b70b2cda3db19dd",
-    "components\\kallax\\instances.py": "af66fc4e546b38d66a757da6fdb8c267fcca5d7024335fbf7c8ae7abafec8642",
+    "components\\kallax\\cad.py": "c92d49e088c6daf9d3f46b406613fed7daecbfc3345e8180356888a91cd1e9ba",
+    "components\\kallax\\documentation.py": "2ca6ffbc6b6c4424b92aef31296cc0efbd4a771dd668aacc82e7b1a2a8cdfb30",
+    "components\\kallax\\instances.py": "38de4e993e8cdb692b741de6c36ce49e301382939ef47f5299bf96ee8a9969f9",
     "components\\kallax\\kit_geometry.py": "65d0f339e9e4eb3b581800f82e8221905615424cb52fee8cef64470582ebc6c4",
-    "components\\kallax\\print_project.py": "4de39a34d75ef412f33f7e145ebefc8d26afb53d61173d134f5401fa5057a402",
+    "components\\kallax\\p1s_print_kit.py": "6509ed25a6374fd4931a91e9d54e6f0b04960e6eb1a1671ea44510ad155157c7",
+    "components\\kallax\\print_project.py": "f2767126fdeafc510fde405fc2b556d33f9f7c5cda884e8338a6833ee79d36a5",
     "components\\kallax\\render_studio.py": "41f2ab9ce142db4d638c983a6ed00280f12968e2e8cb5f96090410638bd6952c",
     "components\\kallax\\validate.py": "311a3c4b07cadafd88aa34765ed3f9e6f2d07888195f48efa15fe3368a78ef17",
     "components\\kallax\\__init__.py": "f7de25bf8e091b2baabeacc0a2b09e50554fae5eb1bbd55c713558a93e8498d4",
@@ -1904,7 +2223,7 @@
         "name": "M6 hex nut",
         "detail": "10 mm AF; 5 mm nominal thickness",
         "id": "hardware_nut_m6",
-        "quantity": 8,
+        "quantity": 20,
         "catalogue_status": "verified",
         "identity_source": "OOMP identity verified 2026-11-06; actual thickness to be checked",
         "md5_6_alpha": "hcps",

@@ -72,7 +72,7 @@ oobb_details:
       name: M6 hex nut
       detail: 10 mm AF; 5 mm nominal thickness
       id: hardware_nut_m6
-      quantity: 8
+      quantity: 20
       catalogue_status: verified
       identity_source: OOMP identity verified 2026-11-06; actual thickness to be checked
       md5_6_alpha: hcps
@@ -156,7 +156,7 @@ oobb_details:
       covers.
     - Cut four M6 threaded rods to 300 mm and deburr the ends. Prepare a 10 mm spanner.
     - 'Each rail: one 18 mm M6 coupling nut, one M6 x 25 fully threaded hex bolt and
-      two M6 nuts.'
+      five M6 nuts.'
     - Seat the fixed nut and bolt head in the outer frame recesses. Retain the bolt
       with an inner nut.
     - 'Nominal coupling engagement: rod 5.99 mm; bolt 7 mm. Bolt length is measured
@@ -190,52 +190,69 @@ oobb_details:
       - 0
       - 0
   - title: Fit the first sleeves
-    action: Slide one 99.67 mm sleeve onto each rod, then fit the second frame.
+    action: Slide a 99.67 mm spacer onto each rod. Thread an M6 nut against each spacer.
+      Fit frame 2 with its hex recesses over the nuts.
     add:
     - front_long_first_*
+    - front_first_spacer_nut_*
     - front_frame_2
     move:
       front_long_first_*:
       - 20
       - 0
       - 0
-      front_frame_2:
+      front_first_spacer_nut_*:
       - 40
+      - 0
+      - 0
+      front_frame_2:
+      - 65
       - 0
       - 0
   - title: Fit the centre and remaining sleeves
-    action: Fit two 67.67 mm sleeves, the third frame and two 99.67 mm sleeves. Face
-      the last sleeves' hex pockets toward the couplings.
+    action: Fit a 67.67 mm spacer and an M6 nut on each rod. Seat frame 3 over the
+      nuts. Fit the last 99.67 mm spacers with their hex pockets facing the couplings.
     add:
-    - front_centre_*
+    - front_centre_?
+    - front_centre_spacer_nut_*
     - front_frame_3
     - front_long_last_*
     move:
-      front_centre_*:
+      front_centre_?:
       - 20
       - 0
       - 0
-      front_frame_3:
+      front_centre_spacer_nut_*:
       - 40
       - 0
       - 0
+      front_frame_3:
+      - 65
+      - 0
+      - 0
       front_long_last_*:
-      - 60
+      - 85
       - 0
       - 0
   - title: Fit the couplings
-    action: Insert an M6 coupling nut into each 18 mm housing. Thread each coupling
-      approximately 6 mm onto its rod.
+    action: "Thread an M6 nut onto each rod. Seat it flush in the last spacer\u2019\
+      s hex pocket. Fit each coupling nut in its 18 mm housing and thread it about\
+      \ 6 mm onto the rod."
     add:
+    - front_last_spacer_nut_*
     - front_coupling_*
     - front_housing_*
     move:
+      front_last_spacer_nut_*:
+      - 20
+      - 0
+      - 0
       front_coupling_*:
-      - 25
+      - 45
       - 0
       - 0
       front_housing_*:
-      - 50
+      - 70
       - 0
       - 0
   - title: Fit the adjusting end
@@ -294,52 +311,69 @@ oobb_details:
       - 0
       - 0
   - title: Fit the first sleeves
-    action: Slide one 99.67 mm sleeve onto each rod, then fit the second frame.
+    action: Slide a 99.67 mm spacer onto each rod. Thread an M6 nut against each spacer.
+      Fit frame 2 with its hex recesses over the nuts.
     add:
     - rear_long_first_*
+    - rear_first_spacer_nut_*
     - rear_frame_2
     move:
       rear_long_first_*:
       - 20
       - 0
       - 0
-      rear_frame_2:
+      rear_first_spacer_nut_*:
       - 40
+      - 0
+      - 0
+      rear_frame_2:
+      - 65
       - 0
       - 0
   - title: Fit the centre and remaining sleeves
-    action: Fit two 67.67 mm sleeves, the third frame and two 99.67 mm sleeves. Face
-      the last sleeves' hex pockets toward the couplings.
+    action: Fit a 67.67 mm spacer and an M6 nut on each rod. Seat frame 3 over the
+      nuts. Fit the last 99.67 mm spacers with their hex pockets facing the couplings.
     add:
-    - rear_centre_*
+    - rear_centre_?
+    - rear_centre_spacer_nut_*
     - rear_frame_3
     - rear_long_last_*
     move:
-      rear_centre_*:
+      rear_centre_?:
       - 20
       - 0
       - 0
-      rear_frame_3:
+      rear_centre_spacer_nut_*:
       - 40
       - 0
       - 0
+      rear_frame_3:
+      - 65
+      - 0
+      - 0
       rear_long_last_*:
-      - 60
+      - 85
       - 0
       - 0
   - title: Fit the couplings
-    action: Insert an M6 coupling nut into each 18 mm housing. Thread each coupling
-      approximately 6 mm onto its rod.
+    action: "Thread an M6 nut onto each rod. Seat it flush in the last spacer\u2019\
+      s hex pocket. Fit each coupling nut in its 18 mm housing and thread it about\
+      \ 6 mm onto the rod."
     add:
+    - rear_last_spacer_nut_*
     - rear_coupling_*
     - rear_housing_*
     move:
+      rear_last_spacer_nut_*:
+      - 20
+      - 0
+      - 0
       rear_coupling_*:
-      - 25
+      - 45
       - 0
       - 0
       rear_housing_*:
-      - 50
+      - 70
       - 0
       - 0
   - title: Fit the adjusting end
